@@ -1,0 +1,96 @@
+.instagram-container
+  .cssanimations &
+    opacity: 0
+    -webkit-animation-delay: 500ms
+.instagram
+  +clearfix()
+  figure 
+    float: left
+    width: col-size(2)
+    height: col-size(2)
+    margin: 0 0 $col_margin $col_margin 
+    padding: 0
+    -webkit-animation-name: reveal1
+    -webkit-animation-duration: 500ms
+    -webkit-animation-fill-mode: forwards
+    &:first-child
+      margin-left: 0
+      width: col-size(4)
+      height: col-size(4)
+    .cssanimations &
+      opacity: 0
+      &:first-child
+        -webkit-animation-delay: 800ms
+      &:nth-child(2)
+        -webkit-animation-delay: 900ms
+      &:nth-child(3)
+        -webkit-animation-delay: 1000ms
+      &:nth-child(4)
+        -webkit-animation-delay: 1100ms
+      &:nth-child(5)
+        -webkit-animation-delay: 1200ms
+      &:nth-child(6)
+        -webkit-animation-delay: 1300ms
+      &:nth-child(7)
+        -webkit-animation-delay: 1400ms
+      &:nth-child(8)
+        -webkit-animation-delay: 1500ms
+      &:nth-child(9)
+        -webkit-animation-delay: 1600ms
+  figcaption
+    display: none
+  a
+    display: block
+  img
+    width: 100%
+    height: 100%
+    display: block
+    background: lighten($fore1, 50%)
+
+.blog-container
+  .cssanimations &
+    opacity: 0
+    -webkit-animation-delay: 1000ms
+.posts
+  article
+    float: left
+    width: col-size(4)
+    margin-left: $col_margin 
+    &:first-child
+      margin: 0 
+  a
+    display: block
+    padding: 3em 0
+    text-decoration: none
+  h3
+    margin: 0
+    color: $text-color-light
+    font-size: 1em
+  h2
+    margin: 0
+    color: $fore1
+    font-size: 1.8em
+    font-weight: 200
+
+.strip3
+  .cssanimations &
+    opacity: 0
+    -webkit-animation-delay: 1500ms
+
+.pens
+  a
+    display: block
+    padding: 1em 0
+    text-decoration: none
+  h2
+    margin: 0
+    color: $fore1
+    font-size: 1.8em
+    font-weight: 200
+  dl, dt, dd 
+    margin: 0
+    padding: 0
+    color: $text-color-light
+  dt,dd
+    display: inline
+

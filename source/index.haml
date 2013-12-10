@@ -1,0 +1,126 @@
+.container
+  %header#head
+    %h1 
+      %b hello,
+      I'm craig morey
+    %h2
+      I'm a web & UX developer in London
+    /* these shims are only here because iOS7 doesn't yet support animations on CSS pseudo elements. Normally I'd just let the animations be an enhancement when available, but it seemed to important an audience to ignore in this case */
+    .shim1
+    .shim2
+  %nav
+    %menu
+      %li
+        %a{:href => '#'} blog
+      %li
+        %a{:href => '#'} work
+      %li
+        %a{:href => '#'} social
+
+%section.container.instagram-container
+  %header
+    %h1 Instagram feed
+    %a{:href => '#'} more
+  .instagram
+    %figure
+      %a{:href => '#'}
+        %img{:src => '#'}
+        %figcaption
+          caption here
+    %figure
+      %a{:href => '#'}
+        %img{:src => '#'}
+        %figcaption
+          caption here
+    %figure
+      %a{:href => '#'}
+        %img{:src => '#'}
+        %figcaption
+          caption here
+    %figure
+      %a{:href => '#'}
+        %img{:src => '#'}
+        %figcaption
+          caption here
+    %figure
+      %a{:href => '#'}
+        %img{:src => '#'}
+        %figcaption
+          caption here
+    %figure
+      %a{:href => '#'}
+        %img{:src => '#'}
+        %figcaption
+          caption here
+    %figure
+      %a{:href => '#'}
+        %img{:src => '#'}
+        %figcaption
+          caption here
+    %figure
+      %a{:href => '#'}
+        %img{:src => '#'}
+        %figcaption
+          caption here
+    %figure
+      %a{:href => '#'}
+        %img{:src => '#'}
+        %figcaption
+          caption here
+
+%section.container.blog-container
+  %header
+    %h1 Recent blog posts
+    %a{:href => '#'} more
+  .posts
+    %article
+      %a{:href => '#'}
+        %h3 2013 Dec 12
+        %h2 What Woody Allen understands about your UX
+    %article
+      %a{:href => '#'}
+        %h3 2013 Aug 18
+        %h2 The way Bustle.com is built conflicts me
+    %article
+      %a{:href => '#'}
+        %h3 2013 Aug 18
+        %h2 BRD (before responsive design)
+
+.container.strip3
+  %section.container-half.codepen-container
+    %header
+      %h1 Recent codepen.io pens
+      %a{:href => '#'} more
+    .pens
+      %article
+        %a{:href => '#'}
+          %h2 uSwitch pure CSS select control v1.0
+          %dl
+            %dt Views:
+            %dd 2053
+            %dt Loves:
+            %dd 52
+      %article
+        %a{:href => '#'}
+          %h2 Responsive tab/accordion widget
+          %dl
+            %dt Views:
+            %dd 10
+      %article
+        %a{:href => '#'}
+          %h2 uSwitch responive modal
+          %dl
+            %dt Views:
+            %dd 753
+            %dt Loves:
+            %dd 25
+            %dt Comments:
+            %dd 2
+
+  %section.container-half.extra-container
+    %header
+      %h1 Empty box
+
+
+
+

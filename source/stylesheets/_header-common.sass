@@ -1,0 +1,153 @@
+#head
+  position: relative
+  width: 18em
+  height: 14em
+  margin: 3em auto
+  padding-top: 4em
+  background-color: transparent
+  border: 1px dashed transparent
+  border-radius: 10em
+  text-align: center
+  -webkit-animation-name: reveal2
+  -webkit-animation-duration: 2000ms
+  -webkit-animation-fill-mode: forwards
+  -webkit-animation-delay: 500ms
+  h1
+    position: relative
+    z-index: 2
+    font-size: 2em
+    margin: 0
+    color: $fore1
+    font-weight: 200
+    line-height: 1.1
+    .cssanimations &
+      color: $back1
+    b 
+      display: block
+      color: #000
+      font-family: $heading-font
+      font-weight: $heading-font-weight
+      font-style:  $heading-font-style
+      font-size: 2.6em
+      letter-spacing: -0.03em
+      line-height: 1
+      -webkit-animation-name: reveal1
+      -webkit-animation-duration: 1500ms
+      -webkit-animation-fill-mode: forwards
+  h2
+    position: relative
+    z-index: 2
+    max-width: 50%
+    margin: 0.5em auto 0
+    color: $fore1
+    font-size: 1em
+    font-weight: 200
+    line-height: 1.25
+    .cssanimations &
+      color: $back1
+  .cssanimations &
+    .shim1
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 1
+      opacity: 0
+      background-color: $fore1
+      border-radius: 10em
+      -webkit-transform: scale3d(0.01,0.01,0)
+      -webkit-animation-name: blup1
+      -webkit-animation-duration: 600ms
+      -webkit-animation-fill-mode: forwards
+      -webkit-animation-delay: 1500ms
+    .shim2
+      position: absolute
+      left: 1em
+      bottom: 1em
+      width: 5em
+      height: 5em
+      background-color: $fore1
+      -webkit-transform: scale3d(0.01,0.01,0)
+      -webkit-animation-name: blup1
+      -webkit-animation-duration: 500ms
+      -webkit-animation-fill-mode: forwards
+      -webkit-animation-delay: 2000ms
+
+nav
+  menu
+    position: absolute
+    top: 7.5em
+    left: 50%
+    z-index: 3
+    margin: 0 0 0 15em
+    padding: 0
+    text-align: left
+  li
+    margin: 0
+    padding: 0
+    list-style: none
+  .cssanimations &
+    li
+      opacity: 0
+      -webkit-animation-name: reveal1
+      -webkit-animation-duration: 1000ms
+      -webkit-animation-fill-mode: forwards
+    li:first-child
+      -webkit-animation-delay: 300ms
+    li:nth-child(2)
+      -webkit-animation-delay: 600ms
+    li:nth-child(3)
+      -webkit-animation-delay: 900ms
+
+  a 
+    display: block
+    padding: 0.2em 0
+    color: #000
+    font-family: $heading-font
+    font-weight: $heading-font-weight
+    font-style:  $heading-font-style
+    font-size: 1.7em
+    text-decoration: none
+    +transition(color 300ms)
+    &:before
+      content: ''
+      display: inline-block
+      width: 0.8em
+      height: 0.8em
+      margin: 0.2em 0.5em 0 0
+      background: $fore1
+      border-radius: 1em
+    &:hover
+      color: $fore1
+
+
+
+
+@-webkit-keyframes reveal2
+  0%
+    border-color: $back1
+  50%
+    border-color: $fore1
+  100%
+    border-color: transparent
+
+@-webkit-keyframes blup1
+  0%
+    opacity: 0
+    -webkit-transform: scale3d(0.01,0.01,0)
+  1%
+    opacity: 1
+    -webkit-transform: scale3d(0.01,0.01,0)
+  60%
+    opacity: 1
+    -webkit-transform: scale3d(1.1,1.1,0)
+  80%
+    opacity: 1
+    -webkit-transform: scale3d(0.95,0.95,0)
+  90%
+    opacity: 1
+    -webkit-transform: scale3d(1.03,1.03,0)
+  100%
+    opacity: 1
+    -webkit-transform: scale3d(1,1,0)
