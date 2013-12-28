@@ -5,9 +5,11 @@
       I'm craig morey
     %h2
       I'm a web & UX developer in London
-    /* these shims are only here because iOS7 doesn't yet support animations on CSS pseudo elements. Normally I'd just let the animations be an enhancement when available, but it seemed to important an audience to ignore in this case */
+    /* these shims are only here because quite a lot of browsers doesn't yet support animations on CSS pseudo elements. Normally I'd just let the animations be an enhancement when available. */
     .shim1
     .shim2
+    .shim3
+    .shim4
   %nav
     %menu
       %li
@@ -21,52 +23,8 @@
   %header
     %h1 Instagram feed
     %a{:href => '#'} more
-  .instagram
-    %figure
-      %a{:href => '#'}
-        %img{:src => '#'}
-        %figcaption
-          caption here
-    %figure
-      %a{:href => '#'}
-        %img{:src => '#'}
-        %figcaption
-          caption here
-    %figure
-      %a{:href => '#'}
-        %img{:src => '#'}
-        %figcaption
-          caption here
-    %figure
-      %a{:href => '#'}
-        %img{:src => '#'}
-        %figcaption
-          caption here
-    %figure
-      %a{:href => '#'}
-        %img{:src => '#'}
-        %figcaption
-          caption here
-    %figure
-      %a{:href => '#'}
-        %img{:src => '#'}
-        %figcaption
-          caption here
-    %figure
-      %a{:href => '#'}
-        %img{:src => '#'}
-        %figcaption
-          caption here
-    %figure
-      %a{:href => '#'}
-        %img{:src => '#'}
-        %figcaption
-          caption here
-    %figure
-      %a{:href => '#'}
-        %img{:src => '#'}
-        %figcaption
-          caption here
+  #instafeed
+  
 
 %section.container.blog-container
   %header
