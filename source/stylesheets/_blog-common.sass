@@ -1,0 +1,55 @@
+.blog-container
+  .cssanimations &
+    opacity: 0
+    -webkit-animation-delay: 1000ms
+.posts
+  height: 15em
+  overflow: hidden
+  article
+    float: left
+    width: col-size(4)
+    margin-left: $col_margin 
+    &:first-child
+      margin: 0 
+  a
+    position: relative
+    display: block
+    padding: 3em 0 0
+    text-decoration: none
+    +transition(all 500ms)
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      @include background(linear-gradient(transparent 13em, $back1 16em))
+      pointer-events: none
+    &:hover
+      +transform(translateY(-2em))
+      h3,h2
+        color: $fore1
+      p
+        +transform(translateY(0))
+        +transition-delay(200ms)
+        opacity: 1
+  h3,h2
+    margin: 0
+    +transition(color 800ms)
+  h3
+    color: $text-color-light
+    font-size: 1em
+  h2
+    width: 95%
+    color: $fore1
+    font-family: $heading-font
+    font-size: 1.8em
+    font-weight: normal
+    font-style: italic
+  p 
+    margin: 10px 0 0
+    color: $text-color-light
+    opacity: 0
+    +transform(translateY(1em))
+    +transition(all 300ms)
