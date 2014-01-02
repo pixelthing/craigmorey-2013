@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
+
+<channel>
+  <title>Close tag</title>
+  <atom:link href="http://www.craigmorey.co.uk/blog/?feed=rss2" rel="self" type="application/rss+xml" />
+  <link>http://www.craigmorey.co.uk/blog</link>
+  <description>pardon my dust, blog theme being constructed in public...</description>
+  <lastBuildDate>Sat, 28 Dec 2013 12:24:40 +0000</lastBuildDate>
+  <language>en-US</language>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+  <generator>http://wordpress.org/?v=3.8</generator>
+  <item>
+    <title>Base-first, a re-evaluation of “mobile-first”</title>
+    <link>http://www.craigmorey.co.uk/blog/?p=437</link>
+    <comments>http://www.craigmorey.co.uk/blog/?p=437#comments</comments>
+    <pubDate>Sat, 28 Dec 2013 12:18:53 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+        <category><![CDATA[responsive web design]]></category>
+    <category><![CDATA[Uncategorized]]></category>
+    <category><![CDATA[Web design]]></category>
+    <category><![CDATA[webdev]]></category>
+
+    <guid isPermaLink="false">http://www.craigmorey.co.uk/blog/?p=437</guid>
+    <description><![CDATA[The concept of mobile first has been most devs&#8217; way into really thinking deeply about responsive web design. The boilerplates from Andy Clarke and Paul Irish are the foundations of thousands of responsive projects. But as with many simple great ideas, some latch onto the basic idea a little too religiously without question, where it [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p><img src="http://www.craigmorey.co.uk/blog/wp-content/uploads/2013/12/base-first.jpg" alt="base-first" width="1185" height="508" class="alignnone size-full wp-image-435" /></p>
+<p>The concept of mobile first has been most devs&#8217; way into really thinking deeply about responsive web design. The boilerplates from Andy Clarke and Paul Irish are the foundations of thousands of responsive projects.</p>
+<p>But as with many simple great ideas, some latch onto the basic idea a little too religiously without question, where it might no longer be appropriate.</p>
+<p>The point of mobile first was to build up a UX in layers, from the dimensionally constrained to the widescreen, and from the low power, low speed to the broadband powerhouse.</p>
+<p>The theory falls over if you design with modern small screen devices in mind. The temptation and ambition is to build a beautiful “native-like” UX for mobiles, which is bespoke to narrow screen, modern browser use. Take animated off-canvas navigation, or tabbed content becoming an accordion as examples.</p>
+<p>And then what? Normalise and re-define all those classes for larger screens?</p>
+<p>The truth about mobile-first is that it&#8217;s no longer “base layer” first.</p>
+<p>At uSwitch, We’ve been trying to build our media queries “base first”. That is the common, non-media-query code should work on anything that reads HTML4, akin to designing for a non-js browser first, then adding layers on top. It&#8217;s almost impossible to be wholly virtuous at this (or test thoroughly against it) but the goal is to make a page usable anywhere.</p>
+<p>Then our first default layer is a max-width media query (eg max-width:599px) for modern smartphones. There&#8217;s no way of reliably separating “modern, fast, capable phones” from “old, slow devices on a bad network that happen to have a narrow viewport”, so you need to make the compromises that are right for you. This is the subject of a whole other post.</p>
+<p>After that, all our media queries are a more traditional “mobile-first” min-width style, eg min-width:600px (small tablet), then min-width:760px (big tablet), etc.</p>
+<p>This “base-first” method gives us more freedom to customise the UX for narrow screens that often have very different layout issues from even slightly wider multi-column screens. It also reduces the amount of normalising and debugging further up the device scale.</p>
+<p>But more importantly, it keeps us honest about separating “basic” CSS from that which is tailored to the modern mobile experiences we wish for.</p>
+]]></content:encoded>
+      <wfw:commentRss>http://www.craigmorey.co.uk/blog/?feed=rss2&#038;p=437</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+    </item>
+    <item>
+    <title>What Woody Allen understands about your UX</title>
+    <link>http://www.craigmorey.co.uk/blog/?p=421</link>
+    <comments>http://www.craigmorey.co.uk/blog/?p=421#comments</comments>
+    <pubDate>Mon, 02 Dec 2013 09:56:29 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+        <category><![CDATA[Uncategorized]]></category>
+
+    <guid isPermaLink="false">http://www.craigmorey.co.uk/blog/?p=421</guid>
+    <description><![CDATA[Spoiler, if you don&#8217;t want to know how Woody Allen&#8217;s film &#8220;Match point&#8221; ends, this is not for you. But there&#8217;s a point towards the end of the film where the protagonist takes a disassembled hunting shotgun into an apartment and shoots someone, then makes it look like a botched drug robbery. Sure enough, the [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p><a href="http://www.craigmorey.co.uk/blog/wp-content/uploads/2013/12/jon-rhey-meyers1.jpg"><img src="http://www.craigmorey.co.uk/blog/wp-content/uploads/2013/12/jon-rhey-meyers1.jpg" alt="jon-rhey-meyers" width="1116" height="477" class="alignnone size-full wp-image-429" /></a></p>
+<p>Spoiler, if you don&#8217;t want to know how Woody Allen&#8217;s film &#8220;<a href="http://www.imdb.com/title/tt0416320/" target="_blank">Match point</a>&#8221; ends, this is not for you. </p>
+<p>But there&#8217;s a point towards the end of the film where the protagonist takes a disassembled hunting shotgun into an apartment and shoots someone, then makes it look like a botched drug robbery. </p>
+<p>Sure enough, the police take the bait, and as no one saw anyone enter with a full size shotgun, they assume it was a <a href="https://www.google.co.uk/search?q=sawn-off&#038;espv=210&#038;es_sm=119&#038;source=lnms&#038;tbm=isch&#038;sa=X" target="_blank">sawn-off</a>.</p>
+<p>Now here&#8217;s the genius bit from Woody. When they finally suspect our anti-hero, one downside is that &#8220;even if he can get a shotgun, he wouldn&#8217;t know how to make it into a sawn-off.&#8221; But it never was a sawn-off.</p>
+<p>What Woody understands is that even when we try and change the narrative, some of our initial assumptions don&#8217;t budge, and in the end that&#8217;s what sinks us. </p>
+<p>In my less dramatic life, I can plan a mobile user journey, but the assumptions that a person might use left, right or both hands, be on the run or sitting with time on their hands are all just that. Assumptions. </p>
+<p>In user testing you have to ask the dumb questions to make sure you&#8217;re not just imagining what the person was thinking. Dumb questions are far from dumb. </p>
+<p>I&#8217;ve got to tell myself that the evidence tells me a shotgun was used and not what it looked like. </p>
+]]></content:encoded>
+      <wfw:commentRss>http://www.craigmorey.co.uk/blog/?feed=rss2&#038;p=421</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+    </item>
+    <item>
+    <title>The way Bustle.com is built conflicts me</title>
+    <link>http://www.craigmorey.co.uk/blog/?p=407</link>
+    <comments>http://www.craigmorey.co.uk/blog/?p=407#comments</comments>
+    <pubDate>Sun, 18 Aug 2013 15:33:41 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+        <category><![CDATA[Uncategorized]]></category>
+
+    <guid isPermaLink="false">http://www.craigmorey.co.uk/blog/?p=407</guid>
+    <description><![CDATA[Bustle.com is a news website that&#8217;s kicked up plenty of controversy lately. But no matter what your stand on the founder, the philosophy or the content, it sure is pretty. The visual design is crisp but minimal. The interaction design is consistent and considered. The responsive build is pretty faultless. Even the carousel is the [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p><a href="http://www.craigmorey.co.uk/blog/wp-content/uploads/2013/08/bustle.jpg"><img class="alignnone size-full wp-image-405" alt="bustle" src="http://www.craigmorey.co.uk/blog/wp-content/uploads/2013/08/bustle.jpg" width="1600" height="556" /></a></p>
+<p><a href="http://bustle.com" target="_blank">Bustle.com</a> is a news website that&#8217;s kicked up <a href="http://ca.shine.yahoo.com/blogs/shine-on/bustle-women-website-founded-man-mocked-many-164044981.html" target="_blank">plenty of controversy lately</a>. But no matter what your stand on the founder, the philosophy or the content, it sure is pretty.</p>
+<p>The visual design is crisp but minimal. The interaction design is consistent and considered. The responsive build is pretty faultless. Even the carousel is the probably the best ever example of the much maligned widget.</p>
+<p>But it&#8217;s the speed that is the real eye-opener. The initial load time is nothing special &#8211; not awful, but not eyebrow scorching either. No, it&#8217;s every click after that that feels instantaneous.</p>
+<p>Suspecting some sort of HTML5 link prefetching, a quick poke around leads to a surprise. All &#8211; or at least the skeleton of &#8211; content is delivered as an inline large (about 210KB) JSON payload that feeds a javascript app (an ember.js app, although my unfamiliarity with it means I&#8217;m not sure if this is normal for ember). There&#8217;s no &#8220;regular&#8221; HTML content in any bustle.com page at all.</p>
+<blockquote><p>&#8230;this seemed absolute sacrilege. But it&#8217;s <i>so</i> damned convincing</p></blockquote>
+<p>A click on a link rebuilds the page DOM around the required story title and text, with images and sidebars loading asynchronously afterwards. No matter what content URL you go to, the full JSON payload is downloaded and used by the JS engine to render the page.</p>
+<p>As a front end dev that believes in the golden rule &#8220;don&#8217;t break the web&#8221; &#8211; ie, one URL equals one page of marked-up content &#8211; this seemed absolute sacrilege. But it&#8217;s <i>so</i> damned convincing as a user experience. It has that illusive &#8220;native app&#8221; feel, ie, it doesn&#8217;t have that rough 1000ms &#8220;time to glass&#8221; that we are used to, and make allowances for in websites.</p>
+<p>It got me thinking. Could you do this and not break the state driven web?</p>
+<p>What do we want? Well, we want content URLs to deliver content pages in semantic HTML markup that can be read, indexed, saved and shared. That&#8217;s the web as we know it. But we want instant content on clicking a link, to give that confidence boosting app feel.</p>
+<p>So Bustle&#8217;s content management system loads roughly 30 story outlines in their JSON payload. Using HTML5 link pre-fetch to pull 30 extra HTML pages that you probably won&#8217;t visit is beyond overkill, so that&#8217;s out. It also means that whatever prefetching you do, it&#8217;s got to be lightweight to match Bustle&#8217;s 210KB JSON.</p>
+<p>Of course, we&#8217;ve come across this sort of problem before. It&#8217;s the same problem facing web apps that download content for offline use, eg, <a href="http://apps.ft.com/ftwebapp/" target="_blank">ftlabs excellent tablet site</a>, which prefetches content, placing it in local storage for later use offline.</p>
+<p>I can imagine a CMS that provides a &#8220;full layout&#8221; markup page as a response to a URL, or an alternative stripped-down outline payload that can be pre-fetched, stored and used by a JS application for &#8220;instant&#8221; link feel and offline use. The web app could determine if a story behind a clicked link is already stored and build the DOM for it, or link to the full page if it&#8217;s as yet uncached. This way the regular mark-up page is always the fallback, so the web isn&#8217;t broken.</p>
+<p>And actually that mythical CMS could just as easily be WordPress.</p>
+<p>I feel a little project coming on.</p>
+]]></content:encoded>
+      <wfw:commentRss>http://www.craigmorey.co.uk/blog/?feed=rss2&#038;p=407</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+    </item>
+    <item>
+    <title>BRD (before responsive design)</title>
+    <link>http://www.craigmorey.co.uk/blog/?p=375</link>
+    <comments>http://www.craigmorey.co.uk/blog/?p=375#comments</comments>
+    <pubDate>Mon, 03 Jun 2013 05:30:20 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+        <category><![CDATA[CSS]]></category>
+    <category><![CDATA[frameworks]]></category>
+    <category><![CDATA[responsive web design]]></category>
+    <category><![CDATA[Web design]]></category>
+    <category><![CDATA[grid systems]]></category>
+    <category><![CDATA[mindworks]]></category>
+    <category><![CDATA[rwd]]></category>
+    <category><![CDATA[suzuki]]></category>
+
+    <guid isPermaLink="false">http://www.craigmorey.co.uk/blog/?p=375</guid>
+    <description><![CDATA[The year is 2006. The iPhone has yet to be released. The iPad is a mere twinkle in Steve Jobs eye. But we were still dealing with varying screen sizes. I was tasked with building the biggest project of my life, a website for Suzuki GB motorcycles, and like any normal corporate client of the [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p><a href="http://www.craigmorey.co.uk/blog/wp-content/uploads/2013/06/brd.jpg"><img class="alignnone size-full wp-image-387" alt="brd" src="http://www.craigmorey.co.uk/blog/wp-content/uploads/2013/06/brd.jpg" width="1280" height="468" /></a></p>
+<p>The year is 2006. The iPhone has yet to be released. The iPad is a mere twinkle in Steve Jobs eye. But we were still dealing with varying screen sizes.</p>
+<p>I was tasked with building the biggest project of my life, a website for Suzuki GB motorcycles, and like any normal corporate client of the time, they were stuck with 800&#215;600 monitors and IE6, whilst we (<a href="http://www.mindworks.co.uk" target="_blank">MindWorks Marketing</a>) wanted to build something interesting for the more common 1024&#215;768 audience. We didn&#8217;t want to compromise just to make sign-off easier, so we needed a solution.</p>
+<p>This was before 960 grid systems, ui toolkits or even responsive design had been coined. But fluid design had been around since the start of the web, and we just built a framework that made it work for us.</p>
+<p>In lieu of reliable media query support, we used javascript to swap a stylesheet based on screen width, and a system of css styled blocks that would break down under different screen sizes.</p>
+<p>Apart from media queries, the main difference from today&#8217;s frameworks was that it wasn&#8217;t in the style of a vertical grid, but in regular sized floated squares which not only fitted with the brand guidelines, but seemed almost infinitely adaptable, especially when you started nesting them to make small adaptable modular elements.</p>
+<p>The basic system revolved around standard width and height class names, eg, &#8220;.w1&#8243; for a standard 240px width, &#8220;.h3&#8243; for a height of 720px. With a shallow nest of boxes, this covered 90% of use cases, with the occasional breakout rule to allow boxes to change shapes under certain conditions (eg a vertical stack of promos on a wide screen could switch to horizontal on small screens).</p>
+<p><a href="http://www.craigmorey.co.uk/blog/wp-content/uploads/2013/06/grid-system.png"><img class="alignnone size-full wp-image-377" alt="grid-system" src="http://www.craigmorey.co.uk/blog/wp-content/uploads/2013/06/grid-system.png" width="982" height="758" /></a></p>
+<p>As the site evolved to deal with more complex layouts and more screen sizes, the system just worked, although with media queries replacing the javascript stylesheet hack. And it&#8217;s still the basic CSS framework of the <a href="https://www.suzuki-gb.co.uk" target="_blank">current Suzuki GB Motorcycles site</a>, although I&#8217;m no longer involved in the project.</p>
+<p>As a developer, you see a problem and solve it, and this is no different. There would have been other sites that were doing similar things at the time because they all came up against the same problems. But it was years before I realised I&#8217;d created my own responsive grid system, before such a thing was a thing.</p>
+]]></content:encoded>
+      <wfw:commentRss>http://www.craigmorey.co.uk/blog/?feed=rss2&#038;p=375</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+    </item>
+    <item>
+    <title>SVG workflow</title>
+    <link>http://www.craigmorey.co.uk/blog/?p=327</link>
+    <comments>http://www.craigmorey.co.uk/blog/?p=327#comments</comments>
+    <pubDate>Mon, 27 May 2013 19:01:40 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+        <category><![CDATA[Uncategorized]]></category>
+
+    <guid isPermaLink="false">http://www.craigmorey.co.uk/blog/?p=327</guid>
+    <description><![CDATA[SVG is great. But the tools to build them are pretty rubbish. Here&#8217;s what I want: Ability to import a vector (eg, EPS, PDF, AI, SVG) Ability to edit the vector Ability to export as an SVG or PNG That doesn&#8217;t sound too tough. But if you factor in &#8220;without crashing&#8221; and &#8220;exporting rubbish&#8221;, it [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p><a href="http://www.craigmorey.co.uk/blog/wp-content/uploads/2013/05/svg-editors.jpg"><img class="alignnone size-full wp-image-333" alt="svg-editors" src="http://www.craigmorey.co.uk/blog/wp-content/uploads/2013/05/svg-editors.jpg" width="1219" height="435" /></a></p>
+<p>SVG is great. But the tools to build them are pretty rubbish. Here&#8217;s what I want:</p>
+<ul>
+<li>Ability to import a vector (eg, EPS, PDF, AI, SVG)</li>
+<li>Ability to edit the vector</li>
+<li>Ability to export as an SVG or PNG</li>
+</ul>
+<p>That doesn&#8217;t sound too tough. But if you factor in &#8220;without crashing&#8221; and &#8220;exporting rubbish&#8221;, it seems particularly hard. Here&#8217;s my limited experience:</p>
+<ol>
+<li>The open-sourced online <a href="http://svg-edit.googlecode.com/svn-history/r1771/trunk/editor/svg-editor.html" target="_blank">SVG-edit</a> is surprisingly good, but only imports SVGs, and some of the PNG exports can be a bit muddy.</li>
+<li><a href="http://www.bohemiancoding.com/sketch/" target="_blank">Sketch.app</a> is so close to being a one-stop shop for SVG editing. If you&#8217;ve tried it before and found it buggy &#8211; it was &#8211; give it another whirl. The only downside these days is that you can import EPS objects, but not edit them.</li>
+<li>If you do need to import EPS graphics, edit them and output SVGs and PNGs, the only solution I&#8217;ve found is Adobe Fireworks. But it&#8217;s not that simple. Despite having invented the SVG standard, Adobe didn&#8217;t see fit to include import or export into their tools, so you need a couple of third party extensions to make the magic happen:
+<ul>
+<li><a href="http://fireworks.abeall.com/extensions/commands/Export/Export.htm" target="_blank">SVG export</a> by Aaron Beall</li>
+<li><a href="http://johndunning.com/fireworks/description/SVG" target="_blank">SVG import</a> by John Dunning</li>
+</ul>
+</li>
+</ol>
+<p>These two extensions are rock solid and allow you to integrate SVG into your Adobe CS workflow. Highly recommended</p>
+]]></content:encoded>
+      <wfw:commentRss>http://www.craigmorey.co.uk/blog/?feed=rss2&#038;p=327</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+    </item>
+    <item>
+    <title>iOS7 wishlist</title>
+    <link>http://www.craigmorey.co.uk/blog/?p=297</link>
+    <comments>http://www.craigmorey.co.uk/blog/?p=297#comments</comments>
+    <pubDate>Mon, 27 May 2013 15:42:22 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+        <category><![CDATA[Uncategorized]]></category>
+
+    <guid isPermaLink="false">http://www.craigmorey.co.uk/blog/?p=297</guid>
+    <description><![CDATA[Using a Nexus 4 for a while after being a hardcore iOS user has given a different perspective of what I thought I wanted from iOS7. Notifications Top want – no, need – is to upgrade the notifications in iOS. Many people on iOS and Android spend much of their time in their notifications sheet. [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p><a href="http://www.craigmorey.co.uk/blog/wp-content/uploads/2013/05/ios7.jpg"><img class="alignnone size-full wp-image-303" alt="ios7" src="http://www.craigmorey.co.uk/blog/wp-content/uploads/2013/05/ios7.jpg" width="1600" height="470" /></a></p>
+<p>Using a Nexus 4 for a while after being a hardcore iOS user has given a different perspective of what I thought I wanted from iOS7.</p>
+<h3>Notifications</h3>
+<p>Top want – no, need – is to upgrade the notifications in iOS. Many people on iOS and Android spend much of their time in their notifications sheet. it&#8217;s actually the &#8220;get-in, get-out, get-on&#8221; thing that WinPhone7 always promised as their unique selling point.</p>
+<p>It&#8217;s not all bad in iOS, the default behaviour of lighting your screen and showing a notification on the lock screen is way better for me than Android&#8217;s slowly flashing pin-prick. I missed a lot of meetings in the first two weeks of using the Nexus.</p>
+<p>But Android has live connections between notifications and many apps. If you read a gmail on your desktop, the notification disappears from your list on your phone. On iOS there&#8217;s a total disconnect between the notification and the real thing, most people I know have notifications going back weeks on their iPhone (and macs), because it&#8217;s not our job to clear them for the OS.</p>
+<p>On top of that, the ability in Android 4.2 to carry out functions right from the notification sheet (eg, archive/reply to an email) is a god send. Copy it outright please.</p>
+<p>One last thing. Can notifications in iOS please, please not cover important user controls when they roll in on banners at the top of the screen. It&#8217;s a shoddy user experience.</p>
+<h3>Background processes</h3>
+<p>iOS solved the problem of battery drain and multi-tasking by using the concept of limited tasks that can be carried out in the background. At the time, &#8220;real multitasking&#8221; in Android gear was draining batteries in mere hours. But time moves on.</p>
+<p>If you click a gmail notification in Android, it&#8217;s there waiting for you in the gmail app. In iOS, it&#8217;ll switch to the app in question and then download all the email since you last looked at the app &#8211; meanwhile, my mind is drifting &#8220;I wonder if I paid that bill &#8211; wait, what was I doing here?&#8221;. To my mind, that&#8217;s not the fault of notifications, but that the gMail app can do quite a lot in the background that it can&#8217;t do on iOS.</p>
+<p>It&#8217;s the same with twitter, switching to the official twitter app on Android shows all the latest tweets downloaded, whereas on iOS I&#8217;m still waiting for the radio to wake up to download the last few hours of content.</p>
+<p>Apple allow things like photostream to hijack background uploading already.</p>
+<p>This obviously has a pretty major effect on the battery drain, but it must be time to revisit it, or more people will realise they&#8217;re waiting around less on Android than in iOS.</p>
+<h3>An API for apps to Siri</h3>
+<p>Really Apple, you should have done this ages ago. You could have had developers making killer apps for over a year, and instead you&#8217;ve allowed Google to creep up and pass you. For shame.</p>
+<p>Also Siri was &#8220;personal assistant&#8221; software &#8211; not just a codename for &#8220;voice recognition&#8221;. That doesn&#8217;t preclude it from doing anything &#8220;Google now&#8221; does today, if it needs to. We need to stop thinking about it as just another input method.</p>
+<h3>&#8220;Flow&#8221;</h3>
+<p>I&#8217;ve read reviews from people I respect talking about the &#8220;flow&#8221; of data around of Android. I think this intangible quality is a combination of things, some mentioned above, but none of which is impossible to improve greatly in iOS.</p>
+<p>First is the multitasking. Many say that it&#8217;s only really for power users, most people don&#8217;t use it. That maybe true, but that&#8217;s a fault of the UX, not the audience. For a start, double clicking the only physical component to bring up the multi-tasking menu is fussy and also may have contributed to the failure of the button in two iOS devices I&#8217;ve owned. In truth, nothing&#8217;s ever matched the way webOS dealt with running multiple apps.</p>
+<p>The next thing is passing info between apps. Google has been scrupulous in allowing all apps &#8211; not just it&#8217;s own &#8211; to register as available for certain data types/URLs, and then offer them as an option for the first &#8211; or every &#8211; time you encounter them. That *may* mess up Apple&#8217;s sacred &#8220;sandbox&#8221; system (which has proved a mixed blessing). But one thing Apple does need to suck-up is the monopoly on certain apps, eg setting default email apps and allowing more browser engines than just the Apple flavour of webkit.</p>
+<p>The last thing &#8211; and related to the browser engine &#8211; is the default way of dealing with URLs &#8220;in-app&#8221;. In iOS, most apps have their own browser view. Click a link in twitter, Flipboard, Facebook, etc, and you see a sheet appear with the web-view, keeping you &#8220;in-app&#8221;. On Android, that&#8217;s a rare use case, you&#8217;re more likely to be transported to your browser of choice and view the web page with the UI you understand. Leaving the browser (with the Android back button &#8211; which I hate in all cases but this) takes you back to the app you were using and kills the browser tab. Both methods have pros and cons in my mind. Is there a middle road?</p>
+<h3>Lock/home screens and widgets</h3>
+<p>I&#8217;m torn on this one. Home-screens on Android still feel kludgy to me. To use a stock android device efficiently takes setting up, adding apps you want to the home screen(s) so you don&#8217;t have to delve into an un-sortable app folder. That&#8217;s great for power users with lots of apps, but many people I see have android with the home screen that was shipped to them (crapware and all). iOS by contrast is great for non-power users, there&#8217;s one paradigm, the grid of apps. No asking where the apps are, no asking what a home screen is or not realising if you&#8217;re on the wrong home screen (which I still admit to).</p>
+<p>But there are more and more power users. The grid on it&#8217;s own is pissing them off a bit, and some sort of solution needs to be found. Folders don&#8217;t go far enough. Time to service your loudest audience again, not just the segment with a handful of apps.</p>
+<p>Widgets are generally disappointing on Android. They largely look horrible and are an annoyingly limited subset of functionality compared to the apps they serve. The clock is the only one I like. Having said all that, having information that can be viewed at a glance is not to be sniffed at, Windows Phone proves that. There are plenty of ways littered through the web that iOS could do this on app icons or lock screens &#8211; it&#8217;s time to do something about it.</p>
+<h3>Design</h3>
+<p>I include this partly because my fears keep turning out to be true. You can give all the genuine functional upgrades you want &#8211; but if it doesn&#8217;t look different, the press &#8211; and by effect, the public &#8211; will say that nothing&#8217;s changed.</p>
+<p>Personally I don&#8217;t think the UI style is really broken, it&#8217;s just been taken too far in some apps (stitching, leather, reel to reel, blah blah). I could do with less greyish blue and glossy dialog boxes, but that&#8217;s not &#8220;broken&#8221;.</p>
+<p>I&#8217;m fascinated in what effect Jony Ive has on UI, although I&#8217;m not sure we&#8217;ll see the full effect of that this time around. But I do worry that if we got what the press currently want &#8211; a flat UI &#8211; and take away the whimsy and playfulness of many existing apps, you&#8217;ll get an minimalist looking UI on top of minimalist looking hardware, killing the personality. That sharp looking person might draw your attention in the pub as someone potentially interesting, but that&#8217;ll disappear quickly if you find that under the nice threads there&#8217;s not much personality, just straight talk.</p>
+<p>Having said that, the WWDC&#8217;13 logo gives me hope. It has personality that doesn&#8217;t shout of a Corbusier/Mondrian past (word to the wise, Modernism/Cubism is wonderful &#8211; but don&#8217;t take it at face value &#8211; it&#8217;s almost a century old).</p>
+]]></content:encoded>
+      <wfw:commentRss>http://www.craigmorey.co.uk/blog/?feed=rss2&#038;p=297</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+    </item>
+    <item>
+    <title>The light switch.</title>
+    <link>http://www.craigmorey.co.uk/blog/?p=163</link>
+    <comments>http://www.craigmorey.co.uk/blog/?p=163#comments</comments>
+    <pubDate>Thu, 15 Nov 2012 23:27:01 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+        <category><![CDATA[photo]]></category>
+
+    <guid isPermaLink="false">http://atomoco.tumblr.com/post/35802393972</guid>
+    <description><![CDATA[Earlier this year we spent a week in a relative’s farm house in Southern Sweden, and found some gadgets that I remember from my own grandfather’s house. During this time of dredging up and re-interpreting old user interfaces (in skeuomorphic or interpreted form), I thought I’d catalogue a few of them. The light switch. I [&#8230;]]]></description>
+        <content:encoded><![CDATA[<div class="figure"></div>
+<div class="figure"><a href="http://www.craigmorey.co.uk/blog/wp-content/uploads/2012/11/lightswitch.jpg"><img class="alignnone size-full wp-image-291" alt="lightswitch" src="http://www.craigmorey.co.uk/blog/wp-content/uploads/2012/11/lightswitch.jpg" width="1200" height="610" /></a></div>
+<div class="figure"></div>
+<div class="figure"></div>
+<p class="p1">Earlier this year we spent a week in a relative’s farm house in Southern Sweden, and found some gadgets that I remember from my own grandfather’s house. During this time of dredging up and re-interpreting old user interfaces (in skeuomorphic or interpreted form), I thought I’d catalogue a few of them.</p>
+<p class="p1">The light switch.</p>
+<p class="p1">I know. A light switch is a light switch. Except that they’re not. In the UK, the default is a pretty dull and nasty small and stiff rocker switch that is just larger than two finger tips. Here in Sweden, the modern alternative is a nicer and much larger rocker pad, that is an easier hit target and feels lighter to the touch, probably just because you don’t hit it so close to the pivot.</p>
+<p class="p1">But at the farmhouse, the light switches are the the old style rockers. And they’re lovely.</p>
+<p class="p1">There’s a lightness to the spring that makes flicking them a joy. You barely touch them for an immediate effect. And because you flick them with an outstretched finger, theres no stabbing and stubbing, no unsatisfying “smudge” as your digit slides off the switch. Even the click sound is delicate.</p>
+<p class="p1">If the hit target is small &#8211; for instance in the dark &#8211; reach around the side of almost any door and swipe down with the whole of your hand. Much easier.</p>
+<p class="p1">I’m not sure if manufacturing cost or simply a change in style made this design die out. In your typical stripped-down mid-century house maybe they suddenly looked a bit “fiddly”, a bit “Victorian”. But the tactile action and user friendliness still betters the UK light switch. Maybe it’s the button we most press during our lives, maybe it needs to be re-evaluated.</p>
+]]></content:encoded>
+      <wfw:commentRss>http://www.craigmorey.co.uk/blog/?feed=rss2&#038;p=163</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+    </item>
+    <item>
+    <title>LTE and the UK</title>
+    <link>http://www.craigmorey.co.uk/blog/?p=165</link>
+    <comments>http://www.craigmorey.co.uk/blog/?p=165#comments</comments>
+    <pubDate>Mon, 12 Nov 2012 11:03:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+        <category><![CDATA[regular]]></category>
+    <category><![CDATA[4g]]></category>
+    <category><![CDATA[ee]]></category>
+    <category><![CDATA[galaxys3]]></category>
+    <category><![CDATA[iphone5]]></category>
+    <category><![CDATA[lte]]></category>
+    <category><![CDATA[nokia920]]></category>
+    <category><![CDATA[o2]]></category>
+    <category><![CDATA[smartphone]]></category>
+    <category><![CDATA[uk]]></category>
+    <category><![CDATA[vodaphone]]></category>
+
+    <guid isPermaLink="false">http://atomoco.tumblr.com/post/35557256005</guid>
+    <description><![CDATA[Sure I want LTE. Yes, I’d like an iPhone (at the moment). I know that only EE currently have LTE in the UK and the rest of the pack will join the party around May next year (2013). The way I see it, I want good coverage and good penetration &#8211; I live in a [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p><a href="http://www.craigmorey.co.uk/blog/wp-content/uploads/2012/11/lte.jpg"><img class="alignnone size-full wp-image-311" alt="lte" src="http://www.craigmorey.co.uk/blog/wp-content/uploads/2012/11/lte.jpg" width="1600" height="470" /></a></p>
+<p>Sure I want <a href="http://www.youtube.com/watch?v=k-MYSq78dRk" target="_blank">LTE</a>. Yes, I’d like an iPhone (at the moment). I know that only <a href="http://ee.co.uk/" target="_blank">EE currently have LTE in the UK</a> and the rest of the pack will <a href="http://techcrunch.com/2012/11/12/u-k-4g-auction-rules-finalized-combined-reserve-of-1-3bn-for-800mhz-2-6ghz-spectrum-4g-services-to-go-live-in-mayjune/" target="_blank">join the party around May next year</a> (2013).</p>
+<p>The way I see it, I want good coverage and good penetration &#8211; I live in a block of flats in North London that acts like a faraday cage. Getting WiFi to reach 10m is hard enough, while cellphone coverage is pretty much non-existent across all networks.</p>
+<p>So I wondered is all LTE created equal?</p>
+<p>The general consensus is that the lower the frequency, the better the coverage and penetration. With WiFi, running on the more normal 2.4GHz reaches through more walls than the alternate 5GHz (noise aside). I’m also aware that my current iPhone runs on O2 3G at 2.1GHz. Both of these are crappy at home.</p>
+<p>So the lower the LTE frequency the better, sub 1GHz would be great. Currently in the UK we have EE running on the 1.8GHz band, Three will use the same when it launches, while O2 and Vodaphone will be getting either the 800MHz or 2.6GHz bands next year (both widely used in Europe).</p>
+<p>Which means whoever gets the 800MHz band gets my account, right? Well, it could depend on what hardware is available.</p>
+<p>Around the world, there are about 9 different LTE bands in use &#8211; an inevitable consequence of trying to find clear spectrum globally. The device manufacturers understandably don’t want to support every possibility in every phone, and instead pick common subsets.</p>
+<p>For instance the “rest-of-world” SKU of the iPhone5 supports 850MHz, 1.8GHz and 2.1GHz, which gives it pretty wide support around the world, including EE in the UK. But it means no LTE for iPhone5 on the Vodaphone or O2 &#8211; unless Apple release an additional SKU in the future.</p>
+<p>It’s clear that a “tiny” phone (for LTE) like the iPhone 5 only has space for a limited amount of aerials, whereas the much larger Nokia 920 can more easily support aerials for 800MHz/900MHz/1.8GHz/2.1GHz/2.6GHz. Samsung take a different route, instead making ten different SKUs, each for a different market, making it less a “world phone”, but much easier to sell widely within a country.</p>
+<p>It’s a jungle of a market that’s incredibly young, so there’s no clear solution for the manufacturers that gives global coverage, manufacturing efficiency and compact device size.</p>
+<p>To sum up, if you’re interested in LTE in the UK but don’t want to jump in with EE, there’s no point in thinking too definitively just yet. When the UK 4G market really gets started next year, I’ll be eagerly looking at who gets which band, whilst keeping an eye out for what devices/OS are on offer at that point. At this market pace that could mean iOS7, WP9 and Android Victoria Sponge (kidding).</p>
+<p>But in the meantime there’s nothing wrong with a bit of research <img src="http://www.craigmorey.co.uk/blog/wp-includes/images/smilies/icon_wink.gif" alt=";-)" class="wp-smiley" /> </p>
+]]></content:encoded>
+      <wfw:commentRss>http://www.craigmorey.co.uk/blog/?feed=rss2&#038;p=165</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+    </item>
+    <item>
+    <title>CSS gradients in table cells</title>
+    <link>http://www.craigmorey.co.uk/blog/?p=167</link>
+    <comments>http://www.craigmorey.co.uk/blog/?p=167#comments</comments>
+    <pubDate>Mon, 23 Jul 2012 10:22:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+        <category><![CDATA[photo]]></category>
+    <category><![CDATA[border]]></category>
+    <category><![CDATA[bug]]></category>
+    <category><![CDATA[css]]></category>
+    <category><![CDATA[css3]]></category>
+    <category><![CDATA[dashed]]></category>
+    <category><![CDATA[dotted]]></category>
+    <category><![CDATA[gradient]]></category>
+    <category><![CDATA[solid]]></category>
+
+    <guid isPermaLink="false">http://atomoco.tumblr.com/post/27827427012</guid>
+    <description><![CDATA[Weird CSS part 14 million and one. This table has a cell with a simple CSS gradient and a dashed/dotted border on the opposite side. The trouble is, the border appears solid, not dashed &#8211; for no apparent reason. Once the border is changed to red, you can see whats happening. The border sits on [&#8230;]]]></description>
+        <content:encoded><![CDATA[<div class="figure">
+<figure><img alt="" src="http://24.media.tumblr.com/tumblr_m7lzgtGL781qete6qo1_r1_1280.png" /></figure>
+</div>
+<p>Weird CSS part 14 million and one. This table has a cell with a simple CSS gradient and a dashed/dotted border on the opposite side. The trouble is, the border appears solid, not dashed &#8211; for no apparent reason.</p>
+<p>Once the border is changed to red, you can see whats happening. The border sits on top of a  shadow-dom grey border, a mirror of the left side of the cell with it’s gradient. This happens in Chrome 20/FF14/Safari6, so it must be expected behaviour, unless you’re a human I guess.</p>
+<p>So the fix is clunky, add a one pixel change to the gradient on the opposite side and it’s all back to normal (apart from that nasty one pixel jag where the cell joins the heading &#8211; dagnabit)</p>
+]]></content:encoded>
+      <wfw:commentRss>http://www.craigmorey.co.uk/blog/?feed=rss2&#038;p=167</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+    </item>
+    <item>
+    <title>The three horsemen of creativity</title>
+    <link>http://www.craigmorey.co.uk/blog/?p=169</link>
+    <comments>http://www.craigmorey.co.uk/blog/?p=169#comments</comments>
+    <pubDate>Sat, 12 Nov 2011 13:42:00 +0000</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+        <category><![CDATA[regular]]></category>
+
+    <guid isPermaLink="false">http://atomoco.tumblr.com/post/12686387555</guid>
+    <description><![CDATA[When it comes to creativity, I have three basic states of mind, and each one is both constructive and destructive. Each one takes hold of me at a whim, when I would rather be more in control of mixing them up. They both fuel who I am and they hold me back from what I [&#8230;]]]></description>
+        <content:encoded><![CDATA[<p><a href="http://www.craigmorey.co.uk/blog/wp-content/uploads/2011/11/threeamigos.jpg"><img class="alignnone size-full wp-image-317" alt="threeamigos" src="http://www.craigmorey.co.uk/blog/wp-content/uploads/2011/11/threeamigos.jpg" width="1600" height="470" /></a></p>
+<p>When it comes to creativity, I have three basic states of mind, and each one is both constructive and destructive. Each one takes hold of me at a whim, when I would rather be more in control of mixing them up. They both fuel who I am and they hold me back from what I could achieve.</p>
+<h3>Researcher.</h3>
+<p>Even before the internet &#8211; yes, I’ll admit there was such a time &#8211; I was probably the archetypal info-freako. If I was interested in a subject, there wasn’t a library, magazine or documentary that I didn’t shake all the specfics out of.</p>
+<p>It’s easy to see your stamina for info-consumption as a strength, after all, you can’t point to a great writer who wasn’t an avid reader. And you may become the go-to person to ask a question. But gluttony for consuming information leaves no time to create your own works.</p>
+<p>And things are so much worse now. Even with concious strategies for triaging information like skimming hundreds of RSS feeds and sending a precious few to instapaper in endless micro-moments only helps taste the spray of the sea of todays information world.</p>
+<p>I could have a full-time job gorging myself with new information. To no end whatsoever, feeling comforted that I’m learning new ideas, but not producing a single idea of my own.</p>
+<h3>Doer.</h3>
+<p>Real artists may steal, but they also have the taste and skill to make something appear new. The rest of us can follow a style and make something that looks at best “clean” or “professional”. That makes us the doers, trusty sidekicks to the designers of the world.</p>
+<p>Experience has taught me that too many design egos in a room has a negative effect instead of a positive one. You need people to be able to actively question the creative thought, but in the end to get on with the donkey work of “getting shit done”.</p>
+<p>I actually love this part of the job &#8211; the sitting down and working through a problem, followed by the endless polishing so that it’s done right, damn it. It’s a pride thing. It’s the <a href="http://www.gladwell.com/outliers/outliers_excerpt1.html" target="_blank">Malcom Gladwell</a> part of a job &#8211; the nervous trial and error that gradually hardens into a nugget of experienced certainty that you can then throw at a new job, and appear the prefessional that you are.</p>
+<p>Empires were made of that sort of work. But it’s also the comfortable path, the following of others that never breaks the skin of a new idea. Endless pats on the head only encourage you to build similar work, Pavlovian style, before you tire and want to bite back on the patronising hand.</p>
+<p>It’s the thing that makes time pass so quickly until you notice you missed your chance to make a dent on whatever world you work in.</p>
+<h3>Creator.</h3>
+<p>Sitting down and coming up with an idea. There’s a noble pursuit. It doesn’t have to solve cancer, kill poverty or generate clean energy &#8211; a neat little website to re-organise how a team allocates design jobs would make me happy.</p>
+<p>But it comes with it’s own problems. Getting the time inbetween the “research” and the “doing” to really think is hard enough. Having the clarity, the focus and the perspective to sift the sludge and visualise the good stuff is another snag. But then crystalizing a thought into a plan and <strong><em>bloody well executing and completing that plan</em></strong> &#8211; that’s where the true genius of creation lies.</p>
+<p>You can come up against technical limitations (so often your own), but more often a lack of time, energy and passion to follow it through. The wasteland of half-finished good ideas is a heavy net that drags me down. Every new unfulfilled idea is left behind like a dropped penny you can’t be bothered to pick up, so you casually make out that you didn’t notice you dropped it at all.</p>
+<p>And the next idea that comes along is a little harder to act on, because despite your bluster, you can’t hide your own track record from yourself.</p>
+<h3>The three horseman of creativity.</h3>
+<p>These three phases of my mind wrestle with each other. All of them are essential, but only in the right proportion will they achieve anything outside of the ordinary. Most of the time they just get in each other’s way.</p>
+<p>I’ve yet to prove to myself that I can mix them well enough to successfully lead rather than follow. To build things that make people want to work <strong><em>with you</em></strong>, instead of want you <strong><em>on their</em></strong> team. To inspire instead of please.</p>
+<p>I sometimes call myself lazy. By that I mean that I spend too much time on the research and the doing &#8211; because they’re comfortable and necessary. And they happily take up the time that would otherwise be spent on taking a risk on a new idea &#8211; then following it through to it’s conclusion, for better or worse.</p>
+<p>Funny thing becoming a dad. I’m more aware of risk, but I’m more aware of the ways it can really pay off.</p>
+<p>So here’s to more risk, and the right mix of creation, work and research that could make it pay off.</p>
+]]></content:encoded>
+      <wfw:commentRss>http://www.craigmorey.co.uk/blog/?feed=rss2&#038;p=169</wfw:commentRss>
+    <slash:comments>0</slash:comments>
+    </item>
+  </channel>
+</rss>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+ Served from: www.craigmorey.co.uk @ 2013-12-31 15:29:09 by W3 Total Cache -->
