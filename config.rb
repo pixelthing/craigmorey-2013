@@ -1,3 +1,6 @@
+require 'cm_extensions.rb'
+activate :cm_extensions
+
 ###
 # Compass
 ###
