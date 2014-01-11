@@ -52,13 +52,24 @@ body
     opacity: 0
     -webkit-animation-delay: 1500ms
 
-.penstrans
+.pens
   a
     display: block
     padding: 1em 0
     text-decoration: none
+    &:hover
+      p
+        +transform(translateY(0))
+        max-height: 10em
+        opacity: 1
   p 
-    display: none
+    max-height: 0
+    margin: 0 0 0
+    color: $text-color-light
+    opacity: 0
+    overflow: hidden
+    +transform(translateY(1em))
+    +transition(all 300ms)
   h2
     margin: 0
     color: $fore1

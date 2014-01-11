@@ -25,8 +25,8 @@ cmJs.codepen = (function() {
           if (parseInt(item.views) > 0) {
             buffer += '<dt class="pen-views">Views: </dt><dd>' + item.views + '</dd>'
           }
-          if (parseInt(item.loves) > 0) {
-            buffer += '<dt class="pen-loves">Loves: </dt><dd>' + item.loves + '</dd>'
+          if (parseInt(item.hearts) > 0) {
+            buffer += '<dt class="pen-loves">Hearts: </dt><dd>' + item.hearts + '</dd>'
           }
           if (parseInt(item.comments) > 0) {
             buffer += '<dt class="pen-comments">Comments:: </dt><dd>' + item.comments + '</dd>'
