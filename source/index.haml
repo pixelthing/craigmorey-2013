@@ -1,4 +1,10 @@
-.container
+- @section = 'home'
+
+.cm-container.cm-home-nav
+
+  = partial "nav", :locals => {:in_section => @section}
+
+.cm-container
   %header#head
     %h1 
       %b hello,
@@ -10,18 +16,10 @@
     .shim2
     .shim3
     .shim4
-  %nav
-    %menu
-      %li
-        %a{:href => '#'} blog
-      %li
-        %a{:href => '#'} work
-      %li
-        %a{:href => '#'} social
 
   .clear
 
-%section.container.instagram-container
+%section.cm-container.instagram-container
   %header
     %h1 Instagram feed
     %a{:href => 'http://instagram.com/pixelthing',:target => '_blank'} more
@@ -30,25 +28,27 @@
   .clear
 
 
-%section.container.blog-container
+%section.cm-container.blog-container
   %header
     %h1 Recent blog posts
     %a{:href => 'http://craigmorey.co.uk/blog/',:target => '_blank'} more
   .posts
   .clear
 
-.container.strip3
-  %section.container-half.codepen-container.penstrans
+.cm-container.strip3
+  %section.cm-container-half.codepen-container.penstrans
     %header
       %h1 Recent codepen.io pens
       %a{:href => 'http://codepen.io/pixelthing',:target => '_blank'} more
     .pens
 
-  %section.container-half.extra-container
+  %section.cm-container-half.extra-container
     %header
       %h1 Empty box
 
   .clear
+
+= partial "footer"
 
 
 

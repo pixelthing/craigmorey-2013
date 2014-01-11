@@ -1,0 +1,142 @@
+.cm-nav-in-home
+  top: 10em
+  left: auto
+  right: 15%
+
+.cm-home-nav
+  padding: 0
+  z-index: 1000
+  opacity: 0
+  .cssanimations &
+    -webkit-animation-delay: 1500ms
+
+#head
+  position: relative
+  width: 18em
+  height: 14em
+  margin: 3em auto
+  padding-top: 4em
+  background-color: transparent
+  border-radius: 10em
+  border-top: none
+  text-align: center
+  h1
+    position: relative
+    z-index: 23
+    font-size: 2em
+    margin: 0
+    color: $fore1
+    font-weight: 200
+    line-height: 1.1
+    .cssanimations &
+      color: $back1
+      opacity: 0
+      -webkit-animation-name: scale-up
+      -webkit-animation-duration: 600ms
+      -webkit-animation-fill-mode: forwards
+      -webkit-animation-delay: 1500ms
+    b 
+      display: block
+      color: #000
+      font-family: $heading-font
+      font-weight: $heading-font-weight
+      font-style:  $heading-font-style
+      font-size: 2.6em
+      letter-spacing: -0.03em
+      line-height: 1
+      -webkit-animation-name: scale-up
+      -webkit-animation-duration: 1500ms
+      -webkit-animation-fill-mode: forwards
+  h2
+    position: relative
+    z-index: 3
+    max-width: 50%
+    margin: 0.5em auto 0
+    color: $fore1
+    font-size: 1em
+    font-weight: 200
+    line-height: 1.25
+    .cssanimations &
+      color: $back1
+      opacity: 0
+      -webkit-animation-name: fade-up
+      -webkit-animation-duration: 600ms
+      -webkit-animation-fill-mode: forwards
+      -webkit-animation-delay: 1500ms
+  .cssanimations &
+    .shim1
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 2
+      opacity: 0
+      background-color: $fore1
+      border-radius: 10em
+      -webkit-transform: scale3d(0.01,0.01,0)
+      -webkit-animation-name: blup1
+      -webkit-animation-duration: 1000ms
+      -webkit-animation-fill-mode: forwards
+      -webkit-animation-delay: 1800ms
+    .shim2
+      position: absolute
+      left: 1.2em
+      bottom: 1.2em
+      width: 5em
+      height: 5em
+      background-color: $fore1
+      -webkit-transform: scale3d(0.01,0.01,0)
+      -webkit-animation-name: blup1
+      -webkit-animation-duration: 800ms
+      -webkit-animation-fill-mode: forwards
+      -webkit-animation-delay: 2200ms
+    .shim3
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 1
+      opacity: 0
+      background-color: $fore1
+      border-radius: 10em
+      -webkit-transform: scale3d(0.01,0.01,0)
+      -webkit-animation-name: scale-up
+      -webkit-animation-duration: 800ms
+      -webkit-animation-delay: 800ms
+    .shim4
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 1
+      opacity: 0
+      background-color: $back1
+      border-radius: 10em
+      -webkit-transform: scale3d(0.01,0.01,0)
+      -webkit-animation-name: scale-bounce
+      -webkit-animation-duration: 1000ms
+      -webkit-animation-delay: 1000ms
+
+  a 
+    display: block
+    padding: 0.2em 0
+    color: #000
+    font-family: $heading-font
+    font-weight: $heading-font-weight
+    font-style:  $heading-font-style
+    font-size: 1.7em
+    text-decoration: none
+    +transition(color 300ms)
+    &:before
+      content: ''
+      display: inline-block
+      width: 0.8em
+      height: 0.8em
+      margin: 0.2em 0.5em 0 0
+      background: $fore1
+      border-radius: 1em
+    &:hover
+      color: $fore1

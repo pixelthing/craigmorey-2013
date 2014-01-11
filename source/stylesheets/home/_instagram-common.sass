@@ -1,0 +1,97 @@
+.instagram-container
+  .cssanimations &
+    opacity: 0
+    -webkit-animation-delay: 500ms
+#instafeed
+  margin-top: 5px
+  figure 
+    position: relative
+    float: left
+    width: col-size(2)
+    height: col-size(2)
+    margin: 0 0 $col_margin $col_margin 
+    padding: 0
+    -webkit-animation-name: fade-up
+    -webkit-animation-duration: 500ms
+    -webkit-animation-fill-mode: forwards
+    &:first-child
+      margin-left: 0
+      width: col-size(4)
+      height: col-size(4)
+    .cssanimations &
+      opacity: 0
+      &:first-child
+        -webkit-animation-delay: 800ms
+      &:nth-child(2)
+        -webkit-animation-delay: 900ms
+      &:nth-child(3)
+        -webkit-animation-delay: 1000ms
+      &:nth-child(4)
+        -webkit-animation-delay: 1100ms
+      &:nth-child(5)
+        -webkit-animation-delay: 1200ms
+      &:nth-child(6)
+        -webkit-animation-delay: 1300ms
+      &:nth-child(7)
+        -webkit-animation-delay: 1400ms
+      &:nth-child(8)
+        -webkit-animation-delay: 1500ms
+      &:nth-child(9)
+        -webkit-animation-delay: 1600ms
+  figcaption
+    display: none
+  a
+    display: block
+    +transition(all 300ms)
+    +box-shadow(0 0 0 0 $fore1)
+    &:hover
+      +box-shadow(0 0 0 8px $fore1)
+      .figure-date
+        opacity: 1
+  .instagram-video
+    a:before,a:after
+      content: ''
+      display: block
+      position: absolute
+      right: 25px
+      bottom: 25px
+      +transition(all 300ms)
+    a:before
+      width: 20px
+      height: 20px
+      margin: 0 -10px -10px 0
+      border-radius: 50%
+      +box-shadow(0 0 0 5px #fff)
+    a:after
+      margin: 0 -5px -5px 0
+      border-left: 8px solid #fff
+      border-top: 5px solid transparent
+      border-bottom: 5px solid transparent
+    a:hover:before
+      opacity: 1
+      +box-shadow(0 0 0 5px $fore1)
+    a:hover:after
+      border-left: 8px solid $fore1
+  img
+    width: 100%
+    height: 100%
+    display: block
+    background: lighten($fore1, 50%)
+  .figure-date
+    position: absolute
+    top: 0.1em
+    left: 0.1em
+    right: 0.1em
+    bottom: 0.1em
+    max-width: 4em
+    padding: 0
+    opacity: 0
+    color: $fore1
+    font-family: $heading-font
+    font-size: 3em
+    font-weight: bold
+    text-align: left
+    line-height: 0.9
+    letter-spacing: -0.05em
+    +transition(all 300ms)
+    overflow: hidden

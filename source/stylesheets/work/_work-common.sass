@@ -1,0 +1,75 @@
+.cm-work-header
+  position: absolute
+  z-index: 10
+  top: 0
+  left: 0
+  right: 0
+  min-height: 3em
+  background: rgba($back1, 0.2)
+
+.cm-nav-in-work
+  .cm-nav-button
+    color: $text-color-light
+    background: $fore2
+  .cm-nav-title
+    color: $text-color-light
+  .cm-nav-hamburger
+    .bun,.filling,.base
+      background: $text-color-light
+  a
+    color: $fore2
+    &:hover
+      background: $fore2
+
+.cm-work-featured
+  position: relative
+  max-height: 80vh
+  margin: -10px -10px 0
+  overflow: hidden
+  img
+    width: 100%
+    -webkit-animation-name: fade-in
+    -webkit-animation-duration: 1000ms
+    -webkit-animation-fill-mode: forwards
+.cm-work-title
+  position: absolute
+  top: 12em
+  left: 10px
+  right: 10px
+  h1
+    color: $back1
+    font-family: $heading-font
+    font-weight: $heading-font-weight
+    font-style:  $heading-font-style
+    font-size: 8em
+    line-height: 1
+    text-align: center
+
+.cm-work-main
+  float: left
+  width: col-size(9)
+  margin: 0 0 $col_margin 0
+  font-size: 1.2em
+  p
+    margin: 1em 0 1.5em
+
+.cm-work-aside
+  float: left
+  width: col-size(3)
+  margin: 1em 0 $col_margin $col_margin 
+  .cssanimations &
+    opacity: 0
+    -webkit-animation-name: fade-up
+    -webkit-animation-duration: 1000ms
+    -webkit-animation-fill-mode: forwards
+    -webkit-animation-delay: 800ms
+
+  dl,dt,dd,ul,li
+    margin: 0
+    padding: 0
+    list-style: none
+    dt
+      color: $text-color-light
+      font-weight: bold
+    dd
+      margin: 0.2em 0 1em

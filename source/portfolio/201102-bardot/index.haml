@@ -1,0 +1,57 @@
+- @section = 'work'
+
+= partial "../header"
+
+%article.cm-work-article
+
+  .cm-work-featured
+    %img{:src => 'pic1.jpg'}
+    .cm-work-title
+      %h1.cm-container
+        Bardot
+
+  .cm-container
+
+    %h2 An experiment in rescuing old magazines
+
+    .cm-work-main
+      
+      %p "Bardot" was a codename for a project I'd been sketching since I first saw the iPad. I'd been digging through the loft in my family's home and found some incredible magazines and publications, so old they were in danger of turning to dust. The plan was to not only scan and post the content onto the open web to archive them for everyone, but to make something new.
+
+      %p Bardot is an HTML5/JS/CSS framework that takes ordinary page scans and turns them into an offline enabled web app, searchable with hidden annotations, hyperlinking to other web content and shareable by linking into major social networks. But above all, it was to be a great reading experience - especially on tablets - with minimal interface, touch navigation/zoom and full screen pages and spreads. In short, it was to feel like an iPad magazine app, but built on the open web, not locked into any one platform. A "continuous screen client" that could remember what page you left off on your iPad and start at the same spot on your laptop.
+
+      %p I'd been waiting for someone to build it - it seemed such an obvious merger of HTML5, mobile platforms and content - but it never really appeared. So I decided to build it myself.
+
+      %p Whilst building it I learnt huge amounts about the limits of CSS and Javascript, hardware acceleration and resource management. It's still ongoing. I'm still plugging away at it, and all the time the hardware and techniques bring it closer to reality. Bardot was never meant to be a money maker. It was the sort of project the open web was built on. A need to set information free.
+
+    %aside.cm-work-aside
+      %dl
+        %dt Year:
+        %dd 2011
+
+        %dt Employer:
+        %dd n/a
+
+        %dt Client:
+        %dd n/a
+
+        %dt Tech:
+        %dd
+          %ul
+            %li Vanilla JS
+            %li CSS3 transitions
+            %li Responsive design
+            %li TouchEvents
+            %li PHP
+
+        %dt Links:
+        %dd
+          %ul
+            %li 
+              %a{:href => 'http://craigmorey.co.uk/arch/bardot/5/', :target => '_blank'} Demo
+            %li 
+              %a{:href => 'https://github.com/pixelthing/atomoco-bardot', :target => '_blank'} Github
+
+  .clear
+
+= partial "../../footer"
