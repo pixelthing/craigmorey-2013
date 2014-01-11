@@ -5,11 +5,12 @@
     <title><%= current_page.data.title || "Craig Morey - web and UX developer in London" %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <%= stylesheet_link_tag "common", :media => "screen" %>
-    <%= stylesheet_link_tag "mobile", :media => "screen AND (max-width: 599px)" %>
-    <%= stylesheet_link_tag "small-tablet", :media => "screen AND (min-width: 600px)" %>
-    <%= stylesheet_link_tag "tablet", :media => "screen AND (min-width: 768px)" %>
-    <%= stylesheet_link_tag "desktop", :media => "screen AND (min-width: 962px)" %>
+    <%= stylesheet_link_tag "fonts", :media => "screen" %>
+    <%= stylesheet_link_tag "#{@section}/style", :media => "screen" %>
+    <%= stylesheet_link_tag "#{@section}/style-mobile", :media => "screen AND (max-width: 599px)" %>
+    <%= stylesheet_link_tag "#{@section}/style-small-tablet", :media => "screen AND (min-width: 600px)" %>
+    <%= stylesheet_link_tag "#{@section}/style-tablet", :media => "screen AND (min-width: 768px)" %>
+    <%= stylesheet_link_tag "#{@section}/style-desktop", :media => "screen AND (min-width: 962px)" %>
     <%= stylesheet_link_tag "print", :media => "print" %>
 
     <!-- Modernizr -->
