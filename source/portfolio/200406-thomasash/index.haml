@@ -1,0 +1,55 @@
+- @section = 'work'
+
+= partial "../../nav", :locals => {:in_section => @section}
+= partial "../header"
+
+%article.cm-work-article
+
+  .cm-work-featured
+    %img{:src => 'feature.jpg'}
+    .cm-work-title
+      %h1.cm-container
+        Thomas Ash
+
+  .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => 'Using the animation capabilities in Flash, the Thomas Ash site combined and recombined a set of boxes to reveal different pages.'}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => 'Installations that were featured popped up within the flash movie.'}
+        %img{:src => 'pic2s.jpg'}
+      %a.fancybox{:href => 'pic3.jpg', :rel => 'project', :title => 'Image details also appeared in faux-pop-ups.'}
+        %img{:src => 'pic3s.jpg'}
+      .clear
+
+    %h2 Flash to the max (for 2004)
+
+    .cm-work-main
+      
+      %p The Thomas Ash website is still up and not looking it's age of eight years. It was built in Flash for a design agency that was still learning how to transfer their excellent design skills to building websites. Managing the relationship with a design team that are primarily print based just takes listening on both sides, and within a short time we'd planned a Flash website that kept the download time low whilst reflecting the quality of the brand. The finished article took into account non-flash fallbacks and SEO friendly content, all the time looking slick and simple.
+
+    %aside.cm-work-aside
+      %dl
+        %dt Year:
+        %dd 2004
+
+        %dt Employer:
+        %dd Studio Limonard
+
+        %dt Client:
+        %dd Thomas Ash
+
+        %dt Tech:
+        %dd
+          %ul
+            %li Adobe Flash
+
+        %dt Links:
+        %dd
+          %ul
+            %li 
+              %a{:href => 'http://www.thomasash.com/', :target => '_blank'} Thomas Ash
+
+  .clear
+
+= partial "../../footer"

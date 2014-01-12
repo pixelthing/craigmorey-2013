@@ -1,0 +1,60 @@
+- @section = 'work'
+
+= partial "../../nav", :locals => {:in_section => @section}
+= partial "../header"
+
+%article.cm-work-article
+
+  .cm-work-featured
+    %img{:src => 'feature.jpg'}
+    .cm-work-title
+      %h1.cm-container
+        Banner Extranet
+
+  .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => 'Progress indicators, file downloads, search fields. What\'s changed in extranets in ten years?'}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => 'With the press clippings site, it wasn\'t just the site I was dealing with, it was the workflow to generate the content too - joining up the online and offline processes to be as streamlined as possible.'}
+        %img{:src => 'pic2s.jpg'}
+      .clear
+
+    %h2 Discovering the web didn't have to be static
+
+    .cm-work-main
+      
+      %p At the start it was called "web publishing" - the idea that an HTML site could be created from a "script" and a "database". I started playing around with these concepts with the now defunct "Tango" development platform that hooked into Filemaker Pro databases.
+
+      %p It wasn't long before we were creating Extranets for Banner, allowing clients to remotely download design concepts and media schedules, whilst I designed workflows for administrators to scan press clippings and post them up on a secure website (before clippings services saw the potential in the web). It's amazing to think about what we achieved so early on.
+
+
+    %aside.cm-work-aside
+      %dl
+        %dt Year:
+        %dd 2000
+
+        %dt Employer:
+        %dd Banner Corp
+
+        %dt Client:
+        %dd n/a
+
+        %dt Tech:
+        %dd
+          %ul
+            %li HTML
+            %li Filemaker Pro
+            %li Tango RWD
+            %li MySQL
+            %li PHP
+
+        %dt Links:
+        %dd
+          %ul
+            %li 
+              Website Rebuilt since
+
+  .clear
+
+= partial "../../footer"

@@ -1,16 +1,28 @@
 - @section = 'work'
 
+= partial "../../nav", :locals => {:in_section => @section}
 = partial "../header"
 
 %article.cm-work-article
 
   .cm-work-featured
-    %img{:src => 'pic1.jpg'}
+    %img{:src => 'feature.jpg'}
     .cm-work-title
       %h1.cm-container
         Trevor Towner
 
   .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => "The main banner on the homepage has a javascript/CSS3 powered chequerboard cross fade."}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => "The shop catalogue can be filtered by category, and further filtered by material."}
+        %img{:src => 'pic2s.jpg'}
+      %a.fancybox{:href => 'pic3.jpg', :rel => 'project', :title => "Checkouts traditionally take up a lot fo room with forms for the basket, delivery and billing addresses. On a fixed size layout like this, I needed to do some neat hidden panel tricks to fit it all in without making it look cramped."}
+        %img{:src => 'pic3s.jpg'}
+      %a.fancybox{:href => 'pic4.jpg', :rel => 'project', :title => "The sub-1024px-wide layout gives up the fixed height layout for a more conventional scrolling format. This also provides the fallback style for older browsers."}
+        %img{:src => 'pic4s.jpg'}
+      .clear
 
     %h2 An online shop for a goldsmith craftsman
 
@@ -29,27 +41,29 @@
         %dd 2011
 
         %dt Employer:
-        %dd n/a
+        %dd MindWorks
 
         %dt Client:
-        %dd n/a
+        %dd Trevor Towner
 
         %dt Tech:
         %dd
           %ul
-            %li Vanilla JS
+            %li Mootools JS
             %li CSS3 transitions
             %li Responsive design
             %li TouchEvents
+            %li SagePay
             %li PHP
+            %li MindType CMS
 
         %dt Links:
         %dd
           %ul
             %li 
-              %a{:href => 'http://craigmorey.co.uk/arch/bardot/5/', :target => '_blank'} Demo
+              %a{:href => 'http://www.trevortowner.com/', :target => '_blank'} Trevor Towner
             %li 
-              %a{:href => 'https://github.com/pixelthing/atomoco-bardot', :target => '_blank'} Github
+              %a{:href => 'http://www.mindworks.co.uk', :target => '_blank'} MindWorks
 
   .clear
 

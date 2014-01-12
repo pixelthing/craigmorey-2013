@@ -1,26 +1,38 @@
 - @section = 'work'
 
+= partial "../../nav", :locals => {:in_section => @section}
 = partial "../header"
 
 %article.cm-work-article
 
   .cm-work-featured
-    %img{:src => 'pic1.jpg'}
+    %img{:src => 'feature.jpg'}
     .cm-work-title
       %h1.cm-container
         Portfolio
 
   .cm-container
 
-    %h2 responsive and 3D
+    .cm-work-thumbs
+      %a.fancybox-media{:href => 'https://vimeo.com/37688240', :rel => 'project', :title => "A quick shaky movie to show the site running on all sizes of screen."}
+        %img{:src => 'pic4s.jpg'}
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => "Another responsive site, where the format and font size change to match the screen available - a presentation thats made for whatever screen you have."}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => "It's not just about geeky features. The content is the heart of the site. If someone is interested in the work I'm doing, they need to know what my involvement was, and my thoughts on the project."}
+        %img{:src => 'pic2s.jpg'}
+      %a.fancybox{:href => 'pic3.jpg', :rel => 'project', :title => "Clicking the 'go' button triggers an animation of the letter being stamped, and it's sent with a woosh. Just a bit of to add to a normally dull process."}
+        %img{:src => 'pic3s.jpg'}
+      .clear
+
+    %h2 A front-end dev showcase
 
     .cm-work-main
 
       %p It was time to sort out a portfolio site that showed work, plus demonstrated creative and technical skills. And, in a geeky webdev style, here's the interesting bits:
 
       %ul
-        %li I obviously useing webfonts fonts (museo slab 500 and Web corpulent 900 from typekit)
-        %li I used the zepto.js framework. Faster and so much lighter than jQuery, but with largely the same syntax, plus it targeted the same platforms I did - I'm afraid IE was left out, but this was a pretty targeted audience.
+        %li typekit webfonts (museo slab 500 and Web corpulent 900 from typekit)
+        %li zepto.js framework. Faster and so much lighter than jQuery, but with largely the same syntax, plus it targeted the same platforms I did - I'm afraid IE was left out, but this was a pretty targeted audience.
         %li Javascript trickery and EMs dimensioning to scale and fit to any screen, plus media queries to alter the layout to fit the context of the screen shape and form factor. Run it as a full screen pres on your desktop, or read it on your smartphone. The whole thing, nothing missed out.
         %li Keyboard controls built in. They give a slick feel if you're presenting in person, and it was just something I wanted to try.
         %li Touch controls. I used the built in zepto swipe commands to give more natural controls on a touch device. I wanted to take it further and give pixel-for-pixel touch feedback like I've done before, but you've got to draw a line somewhere. Maybe later.
@@ -36,7 +48,7 @@
     %aside.cm-work-aside
       %dl
         %dt Year:
-        %dd 2011
+        %dd 2012
 
         %dt Employer:
         %dd n/a
@@ -47,19 +59,23 @@
         %dt Tech:
         %dd
           %ul
-            %li Vanilla JS
+            %li Zepto JS
             %li CSS3 transitions
+            %li CSS3 3D transforms
             %li Responsive design
+            %li Postmark API
             %li TouchEvents
+            %li Keyboard nav
+            %li Webfonts
             %li PHP
 
         %dt Links:
         %dd
           %ul
             %li 
-              %a{:href => 'http://craigmorey.co.uk/arch/bardot/5/', :target => '_blank'} Demo
+              %a{:href => 'http://craigmorey.co.uk/arch/cm2011/', :target => '_blank'} Archived site
             %li 
-              %a{:href => 'https://github.com/pixelthing/atomoco-bardot', :target => '_blank'} Github
+              %a{:href => 'https://github.com/pixelthing/craigmorey-2011', :target => '_blank'} Github
 
   .clear
 

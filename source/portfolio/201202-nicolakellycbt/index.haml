@@ -1,5 +1,6 @@
 - @section = 'work'
 
+= partial "../../nav", :locals => {:in_section => @section}
 = partial "../header"
 
 %article.cm-work-article
@@ -12,20 +13,27 @@
 
   .cm-container
 
-    %h2 A small movbile first marketing web site
+    .cm-work-thumbs
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => 'Clear information, non-confrontational. The intention was not to make anyone feel they needed to be medicalised, but rather had a professional friend to lean on.'}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => 'The whole site is - of course - built for any size screen. The telephone number was especially picked out as it investigation picked it out as the top reason to visit the site.'}
+        %img{:src => 'pic2s.jpg'}
+      .clear
+
+    %h2 A small mobile first marketing web site
 
     .cm-work-main
 
-      %p A small job to help a friend set up her business, this was a flat website designed and built in a couple of days. The first day was taken up with thinking through the content and the audience, then taking the company style and getting an appropriate look and feel to turn into a website.
+      %p A small job to help a friend set up her business, this was a flat website designed and built in a couple of days. The first day was taken up with conisidering the needs of the audience and planning the content, then taking the company style and getting an appropriate look and feel to turn into a website.
 
-      %p A background in marketing helped in thinking through how the user journey means that most therapy websites can appear either impersonal or too journal-like. Reassuring your potential customers and giving them confidence in your professionalism is a fine balance, but this site uses clear, informal copy with a clean uplifting design to make people feel that the service is not over-medicalised and is relevant to them.
+      %p A background in marketing and UX helped in thinking through how the user journey means that most therapy websites can appear either impersonal or too journal-like. Reassuring your potential customers and giving them confidence in your professionalism is a fine balance, but this site uses clear, informal copy with a clean uplifting design to make people feel that the service is not over-medicalised and is relevant to them.
 
       %p The second day was a matter of coding it up so it was all the qualities that a good site should be. It was SEO and accessibility friendly, responsive to multiple size screens, printable in a neat fashion, and semantically built using HTML/CSS/jQuery with lots of comments to help any further development by others. Care was taken to use double resolution (or half-size) logos to provide beautifully crisp images on retina screens or on print-outs.
 
     %aside.cm-work-aside
       %dl
         %dt Year:
-        %dd 2011
+        %dd 2012
 
         %dt Employer:
         %dd n/a
@@ -36,19 +44,15 @@
         %dt Tech:
         %dd
           %ul
-            %li Vanilla JS
-            %li CSS3 transitions
+            %li jQuery JS
             %li Responsive design
-            %li TouchEvents
             %li PHP
 
         %dt Links:
         %dd
           %ul
             %li 
-              %a{:href => 'http://craigmorey.co.uk/arch/bardot/5/', :target => '_blank'} Demo
-            %li 
-              %a{:href => 'https://github.com/pixelthing/atomoco-bardot', :target => '_blank'} Github
+              %a{:href => 'http://www.nicolakellycbt.co.uk/', :target => '_blank'} Web site
 
   .clear
 

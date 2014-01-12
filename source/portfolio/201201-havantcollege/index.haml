@@ -1,16 +1,30 @@
 - @section = 'work'
 
+= partial "../../nav", :locals => {:in_section => @section}
 = partial "../header"
 
 %article.cm-work-article
 
   .cm-work-featured
-    %img{:src => 'pic4.jpg'}
+    %img{:src => 'feature.jpg'}
     .cm-work-title
       %h1.cm-container
         Havant College
 
   .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => "Taking the themes from the original concepts created by the print design team, this version tidied up the navigation and changed some of the content to emphasise the benefits of the college with quick entry points, not just news and events."}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => "The final homepage combines responsive design, fading banners and a rolling '10 reasons' panel, with colour direction from the print design team."}
+        %img{:src => 'pic2s.jpg'}
+      %a.fancybox{:href => 'pic3.jpg', :rel => 'project', :title => "The sixth form application form is the technical centre-piece. You can optionally save and retrieve your form with a password, as well as field-by-field validation and autosaving the content as you enter it."}
+        %img{:src => 'pic3s.jpg'}
+      %a.fancybox{:href => 'pic4.jpg', :rel => 'project', :title => "Testing across platforms and browsers to make sure everyone has a good experience. Included are Safari, Chrome and Firefox on Mac, IE7/8/9 on PC, iPhone, iPad iOS4, iPad iOS5, Android phone and an Android Tablet."}
+        %img{:src => 'pic4s.jpg'}
+      %a.fancybox{:href => 'pic5.jpg', :rel => 'project', :title => "Testing the site on the current phone of joince for a college student, a Blackberry Curve."}
+        %img{:src => 'pic5s.jpg'}
+      .clear
 
     %h2 A website for a sixth-form college
 
@@ -36,6 +50,7 @@
         %dt Tech:
         %dd
           %ul
+            %li Mootools JS
             %li HTML5
             %li CSS3
             %li PHP
@@ -48,7 +63,7 @@
             %li 
               %a{:href => 'http://havant.ac.uk', :target => '_blank'} Havant College
             %li 
-              %a{:href => 'https://www.mindworks.co.uk', :target => '_blank'} MindWorks
+              %a{:href => 'http://www.mindworks.co.uk', :target => '_blank'} MindWorks
 
   .clear
 

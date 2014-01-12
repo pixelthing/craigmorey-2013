@@ -1,0 +1,65 @@
+- @section = 'work'
+
+= partial "../../nav", :locals => {:in_section => @section}
+= partial "../header"
+
+%article.cm-work-article
+
+  .cm-work-featured
+    %img{:src => 'feature.jpg'}
+    .cm-work-title
+      %h1.cm-container
+        H2Olidays
+
+  .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => "A multi language site that attempted to funnel customers to the options they wanted, whether they had an idea of the type of boat that fancied, or a particular destination."}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => "There was a high level of information available about most of the boats, including a gallery of pictures. More than you'd get looking through the average hotel room page in a Thomas Cook brochure."}
+        %img{:src => 'pic2s.jpg'}
+      %a.fancybox{:href => 'pic3.jpg', :rel => 'project', :title => "Information and imagery about the destinations was more scarce, despite them being just as - if not more - important. So I took it upon myself to crib open information and link up creative commons licenced images from Flickr to give customers more of a feel for the trip."}
+        %img{:src => 'pic3s.jpg'}
+      .clear
+
+    %h2 A multi-lingual travel website & booking system
+
+    .cm-work-main
+      
+      %p H2olidays is a holiday agency that is a broker for many canal boat companies across Europe. It became a project that was possibly the most complex database system I've ever had to wrangle. What in the head of an experienced travel agent is a a simple matter of making the connections between a customer's needs and a bucket-load of options, can be incredibly difficult to replicate in a computer system.
+
+      %p Again a background in systems design helped - and a passion for user experience didn't hurt in trying to make a complex process feel organic. The design theme was largely set already, and only embellished and coded by me, but the wireframes for the pages in the middle served as more of a starting point to discuss how to present information for the customer in a way that helped them get to the end point of making an informed enquiry.
+
+      %p The multiple points of entry, the type of boat, the many destinations, the allegiances to different boating companies, all had to be dealt with. These were then cross linked so that you could marry as many combinations that worked without becoming confusing. Added to that was managing the administrator's workload, with such a colossal amount of data and a tiny staff with no skills in building websites, the admin interface had to take some of the load.
+
+      %p Lastly there was learning the best ways to build multiple languages into the content management system, in a way that could be maintained across twenty database tables.
+
+      %p The project has since moved on without me, with some design changes that have cleared up issues that you only understand after living with a site, and other decisions that make me scratch my head. But it remains a project with a scope that stretched me as a project manager, designer and developer.
+
+    %aside.cm-work-aside
+      %dl
+        %dt Year:
+        %dd 2009
+
+        %dt Employer:
+        %dd n/a
+
+        %dt Client:
+        %dd H2Olidays
+
+        %dt Tech:
+        %dd
+          %ul
+            %li Mootools JS
+            %li Personal CMS
+            %li PHP
+
+        %dt Links:
+        %dd
+          %ul
+            %li 
+              %a{:href => 'http://www.barginginfrance.com/EN/', :target => '_blank'} H2Olidays
+
+  .clear
+
+= partial "../../footer"

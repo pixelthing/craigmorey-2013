@@ -53,15 +53,12 @@ cmJs.workNav = (function() {
 
   checkPrevNext = function() {
     var firstSlotLeft = slotLinks.first().offset().left;
-    var lastSlotRight = slotLinks.last().offset().left + slotLinks.last().width();
+    var lastSlotRight = slotLinks.last().offset().left + 150;
     if (firstSlotLeft < 0) {
       $('.cm-work-nav-prev').addClass('ready');
     } else {
       $('.cm-work-nav-prev').removeClass('ready');
     }
-    console.log(slotLinks.last());
-    console.log(lastSlotRight);
-    console.log($(window).width());
     if (lastSlotRight > $(window).width()) {
       $('.cm-work-nav-next').addClass('ready');
     } else {
@@ -88,8 +85,7 @@ cmJs.workNav = (function() {
 
   loadImages = function() {
     $("img.lazy").lazyload({
-      event : "workNavMove",
-      effect : "fadeIn"
+      event : "workNavMove"
     });
   },
 

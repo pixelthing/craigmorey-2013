@@ -1,0 +1,68 @@
+- @section = 'work'
+
+= partial "../../nav", :locals => {:in_section => @section}
+= partial "../header"
+
+%article.cm-work-article
+
+  .cm-work-featured
+    %img{:src => 'feature.jpg'}
+    .cm-work-title
+      %h1.cm-container
+        Engenuity
+
+  .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => 'Designed for a 640x480px screen, the homepage used a sliver of flash and striking random banner images.'}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => 'The square format is used throughout the site, with printable version of key pages and clear navigation cues - a bit of a surprise in 2001.'}
+        %img{:src => 'pic2s.jpg'}
+      %a.fancybox{:href => 'pic3.jpg', :rel => 'project', :title => 'A flash interactive map - a bit of fun that actually walks you to the office door as well.'}
+        %img{:src => 'pic3s.jpg'}
+      %a.fancybox{:href => 'pic4.jpg', :rel => 'project', :title => 'The beauty of a site for an engineering analysis company is great animations - in this case in animated GIFs.'}
+        %img{:src => 'pic4s.jpg'}
+      %a.fancybox{:href => 'pic5.jpg', :rel => 'project', :title => 'The client pushed the boundaries hard for the extranet. The ability to track which people saw which items and when made the Engenuity\'s job easier, letting them know when the clients had checked their results.'}
+        %img{:src => 'pic5s.jpg'}
+      %a.fancybox{:href => 'pic6.jpg', :rel => 'project', :title => 'The extranet was closely based around specific roles, and each role is visually administered in quite a quirky way.'}
+        %img{:src => 'pic6s.jpg'}
+      .clear
+
+    %h2 An extranet of my own
+
+    .cm-work-main
+      
+      %p After leaving Banner Corporation in Chelsea, I took on a six month contract building a website and extranet for Engenuity, a high tech engineering analysis company.
+
+      %p That site - despite being built to fit on the minimum required 640x480px screen (common at the time) - is still live today. The extranet is also still running, securely uploading and downloading information and results to Engenuity's clients. It was my first taste of managing my own project from start to finish, and coupled with a client with exciting ideas to push me further, I didn't want it to be my last.
+
+
+    %aside.cm-work-aside
+      %dl
+        %dt Year:
+        %dd 2001
+
+        %dt Employer:
+        %dd Engenuity
+
+        %dt Client:
+        %dd n/a
+
+        %dt Tech:
+        %dd
+          %ul
+            %li HTML
+            %li Framesets
+            %li MySQL
+            %li PHP
+            %li Adobe Flash
+
+        %dt Links:
+        %dd
+          %ul
+            %li 
+              %a{:href => 'http://www.engenuity.net/', :target => '_blank'} Engenuity
+
+  .clear
+
+= partial "../../footer"

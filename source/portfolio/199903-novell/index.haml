@@ -1,0 +1,53 @@
+- @section = 'work'
+
+= partial "../../nav", :locals => {:in_section => @section}
+= partial "../header"
+
+%article.cm-work-article
+
+  .cm-work-featured
+    %img{:src => 'feature.jpg'}
+    .cm-work-title
+      %h1.cm-container
+        Novell event site
+
+  .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => 'Looks a nice place for a conference. I used re-purposed print materials in this design for the conference.'}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => 'Another page designed within the Novell template, trying to marry the corporate guidelines with the conference style created by Banner Corp. Oh look - Eric Schmidt (Google Chairman) as CEO!'}
+        %img{:src => 'pic2s.jpg'}
+      .clear
+
+    %h2 Designing to strict guidelines
+
+    .cm-work-main
+      
+      %p Another early job for Banner Corporation, designing and building the website for Novell's yearly European conference.
+
+    %aside.cm-work-aside
+      %dl
+        %dt Year:
+        %dd 1999
+
+        %dt Employer:
+        %dd Banner Corp
+
+        %dt Client:
+        %dd Novell Corp
+
+        %dt Tech:
+        %dd
+          %ul
+            %li HTML
+
+        %dt Links:
+        %dd
+          %ul
+            %li 
+              Website Rebuilt since
+
+  .clear
+
+= partial "../../footer"

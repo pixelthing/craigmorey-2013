@@ -1,0 +1,53 @@
+- @section = 'work'
+
+= partial "../../nav", :locals => {:in_section => @section}
+= partial "../header"
+
+%article.cm-work-article
+
+  .cm-work-featured
+    %img{:src => 'feature.jpg'}
+    .cm-work-title
+      %h1.cm-container
+        Adobe event site
+
+  .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => 'Crikey, Netscape Navigator. As I remember, that news ticker was not a marquee, but a huge animated gif, so we could keep the Adobe corporate fonts. And we had to rebuild it with new events every Monday.'}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => 'The use of colour and print design ideas like tiger striping tables was about as far as we could take the browser technology at the time.'}
+        %img{:src => 'pic2s.jpg'}
+      .clear
+
+    %h2 The beginning of web marketing
+
+    .cm-work-main
+      
+      %p One of my first jobs for Banner Corporation was designing and building an event website for Adobe, trying to bend the "limited" technology of the day to provide lots of useful content that looked better than it should, and small enough to feel quick over a 33Kbps modem.
+
+    %aside.cm-work-aside
+      %dl
+        %dt Year:
+        %dd 1998
+
+        %dt Employer:
+        %dd Banner Corp
+
+        %dt Client:
+        %dd Adobe Corp
+
+        %dt Tech:
+        %dd
+          %ul
+            %li HTML
+
+        %dt Links:
+        %dd
+          %ul
+            %li 
+              Website no longer exists
+
+  .clear
+
+= partial "../../footer"

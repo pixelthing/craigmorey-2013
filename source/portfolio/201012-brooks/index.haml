@@ -1,0 +1,63 @@
+- @section = 'work'
+
+= partial "../../nav", :locals => {:in_section => @section}
+= partial "../header"
+
+%article.cm-work-article
+
+  .cm-work-featured
+    %img{:src => 'feature.jpg'}
+    .cm-work-title
+      %h1.cm-container
+        Brooks
+
+  .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox-media{:href => 'https://vimeo.com/81291868'}
+        %img{:src => 'picVs.jpg'}
+      .clear
+
+    %h2 An experiment into dev-client communication
+
+    .cm-work-main
+      
+      %p Sometimes the communication between the team building the website and the client sucks. It's not normally anyones fault, it's just hard to get the right people to talk at the right time in front of the the website together.
+
+      %p Bangnotes were networked stickies for website development. You have conversations on notes pasted into the feature on the page you want. The idea was that you could then up-end it and turn this mass of notes into a to-do list and hook it into your favourite project management system.
+
+      %p Anyway - that was back in 2010, and it never got off the ground. Not least because "responsive design" made pasting notes on a feature and expecting that feature to stay in the same place a nonsense.
+
+
+    %aside.cm-work-aside
+      %dl
+        %dt Year:
+        %dd 2010
+
+        %dt Employer:
+        %dd n/a
+
+        %dt Client:
+        %dd n/a
+
+        %dt Tech:
+        %dd
+          %ul
+            %li HTML5
+            %li CCS4
+            %li Vanilla JS
+            %li touch events
+            %li PHP 
+            %li MySQL
+            %li JSONP
+            %li WebSockets  
+
+        %dt Links:
+        %dd
+          %ul
+            %li 
+              %a{:href => 'https://github.com/pixelthing/atomoco-bangnotes', :target => '_blank'} Github
+
+  .clear
+
+= partial "../../footer"

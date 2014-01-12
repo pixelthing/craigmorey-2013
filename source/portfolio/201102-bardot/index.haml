@@ -1,5 +1,6 @@
 - @section = 'work'
 
+= partial "../../nav", :locals => {:in_section => @section}
 = partial "../header"
 
 %article.cm-work-article
@@ -11,6 +12,17 @@
         Bardot
 
   .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox-media{:href => 'https://vimeo.com/81313543'}
+        %img{:src => 'picVs.jpg'}
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => "Bardot tried to to take content that was endangered of being lost forever and not just make it web-discoverable, but a pleasurable reading experience - especially on tablets."}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => "All unnecessary interface was stripped away to focus on the reading experience. The CSS3/Canvas bookmark moved along the top edge of the screen giving a visual indicator how far through you were, and was also the entry point to the thumbnail index."}
+        %img{:src => 'pic2s.jpg'}
+      %a.fancybox{:href => 'pic3.jpg', :rel => 'project', :title => "The web app was built to be responsive to the screen size, resizing content and switching between single-page view, two-page view (ie a 'spread') and even three-page fold-outs. On a tablet all you need to do is turn it sideways to switch modes."}
+        %img{:src => 'pic3s.jpg'}
+      .clear
 
     %h2 An experiment in rescuing old magazines
 

@@ -1,0 +1,69 @@
+- @section = 'work'
+
+= partial "../../nav", :locals => {:in_section => @section}
+= partial "../header"
+
+%article.cm-work-article
+
+  .cm-work-featured
+    %img{:src => 'feature.jpg'}
+    .cm-work-title
+      %h1.cm-container
+        USCAR
+
+  .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => 'A file sharing system, with distribution lists, permissions settings and logs of who viewed what.'}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => 'Are you getting a sense of the bureaucracy yet? RFPOs were created across three companies and twelve seperate groups, then signed off in a rigid procedure based on predefined criteria.'}
+        %img{:src => 'pic2s.jpg'}
+      %a.fancybox{:href => 'pic3.jpg', :rel => 'project', :title => 'The signees get clear instructions about whether to approve or refuse an RFPO.'}
+        %img{:src => 'pic3s.jpg'}
+      %a.fancybox{:href => 'pic4.jpg', :rel => 'project', :title => 'Administers have a heck of a job controlling the criteria and signees, but the administration system was designed to make their life easier.'}
+        %img{:src => 'pic4s.jpg'}
+      %a.fancybox{:href => 'pic5.jpg', :rel => 'project', :title => 'Launched in 2003, with all the features you expect of an online calendar, CAL\'s main purpose was to schedule conference rooms and resources.'}
+        %img{:src => 'pic5s.jpg'}
+      %a.fancybox{:href => 'pic6.jpg', :rel => 'project', :title => 'CAL made very early use of transparency (through PNGs) to show overlapping events, with hover events allowing you to peek at any event at any depth.'}
+        %img{:src => 'pic6s.jpg'}
+      .clear
+
+    %h2 A trans-atlantic intranet project
+
+    .cm-work-main
+      
+      %p USCAR is a US government agency that is funded by the car industry to investigate new technologies. I know, geek heaven. After striking up a relationship with them during my contract at Engenuity, this was my first freelance job after that project, leading to three separate jobs for them. I still look back on them and wondered how I had no fear in taking them on.
+
+      %p The first was V-Room (They loved all those crazy names), a file extranet that was based on Engenuity's system. The second was the huge "Request for Purchase Order" (RFPO) system, a monster to plan and implement, allowing employees to generate their own electronic purchase orders that would go through pre-determined sign-off list, depending on many criteria including team structure and outlay. The last project was a resource booking calendar - well before Google Calendar came along, with lots of functionality and design touches such as allowing overlapping events to remain visible.
+
+
+    %aside.cm-work-aside
+      %dl
+        %dt Year:
+        %dd 2002
+
+        %dt Employer:
+        %dd n/a
+
+        %dt Client:
+        %dd USCAR
+
+        %dt Tech:
+        %dd
+          %ul
+            %li HTML
+            %li Framesets
+            %li MySQL
+            %li PHP
+
+        %dt Links:
+        %dd
+          %ul
+            %li 
+              %a{:href => 'http://www.uscarteams.org/', :target => '_blank'} USCAR Teams
+            %li 
+              %a{:href => 'http://www.uscar.org/', :target => '_blank'} USCAR Home
+
+  .clear
+
+= partial "../../footer"
