@@ -4,9 +4,18 @@
   top: 0
   left: 0
   right: 0
-  min-height: 3em
-  background: rgba($back1, 0.2)
+  background: rgba($back1, 0.4)
+  +transition(transform 300ms)
+  +transform(translateY(0))
+  &.ready
+    +transform(translateY(-50px))
+  &:hover,&.open
+    +transform(translateY(0))
+    h4
+      max-height: 4em
+      opacity: 1
 
+/* main navigation */
 .cm-nav-in-work
   .cm-nav-button
     color: $text-color-light
@@ -21,6 +30,87 @@
     &:hover
       background: $fore2
 
+/* portfolio navigation */
+.cm-work-nav-outer
+  max-width: 100%
+  overflow: hidden
+.cm-work-nav
+  position: absolute
+  top: 0
+  left: 50%
+  width: 4000px
+  text-align: left
+  &.ready
+    +transition(margin-left 300ms)
+  menu
+    list-style: none
+    margin: 0
+    padding: 0
+  li
+    float: left
+    width: 150px
+  figure
+    display: block
+    width: 150px
+    height: 75px
+    margin: 0
+    padding: 0
+    background: #fff
+    opacity: 0.5
+    overflow: hidden
+    +transition(opacity 500ms)
+    img 
+      margin-top: -47px
+  h4
+    max-height: 1em
+    opacity: 0
+    margin: 0
+    padding: 0.5em
+    @include background(linear-gradient(rgba(#fff,0.7) 0%, rgba(#fff,0) 50%))
+    background-size: 100% 8em
+    background-position: 0 -4em
+    background-repeat: no-repeat
+    font-weight: normal
+    overflow: hidden
+    +transition(all 500ms)
+  b 
+    display: block
+  a 
+    color: #fff
+    text-decoration: none
+    &:hover
+      figure
+        opacity: 1
+      h4
+        color: $text-color-dark
+        background-position: 0 0
+
+  @for $i from 1 through 30
+    &.open-#{$i}
+      margin-left: -#{(150 * $i) - 75}px
+      .slot-#{$i} h4
+        background: transparent
+        opacity: 0
+
+.cm-work-nav-prev,.cm-work-nav-next
+  position: absolute
+  left: 0
+  top: 0
+  z-index: 1
+  width: 30px
+  height: 75px
+  background: #fff
+  opacity: 0
+  +transition(opacity 500ms)
+  &.ready
+    opacity: 1
+.cm-work-nav-next
+  left: auto
+  right: 0
+
+
+
+/* article featured image */
 .cm-work-featured
   position: relative
   max-height: 80vh
@@ -31,19 +121,23 @@
     -webkit-animation-name: fade-in
     -webkit-animation-duration: 1000ms
     -webkit-animation-fill-mode: forwards
+
 .cm-work-title
   position: absolute
   top: 12em
   left: 10px
   right: 10px
   h1
-    color: $back1
+    color: #fff
     font-family: $heading-font
     font-weight: $heading-font-weight
     font-style:  $heading-font-style
     font-size: 8em
     line-height: 1
     text-align: center
+    text-shadow: 0 0 12px rgba($text-color-dark,0.8)
+
+/* article body */
 
 .cm-work-main
   float: left
