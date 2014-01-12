@@ -1,0 +1,56 @@
+- @section = 'work'
+
+= partial "../header"
+
+%article.cm-work-article
+
+  .cm-work-featured
+    %img{:src => 'pic1.jpg'}
+    .cm-work-title
+      %h1.cm-container
+        Trevor Towner
+
+  .cm-container
+
+    %h2 An online shop for a goldsmith craftsman
+
+    .cm-work-main
+      
+      %p I've still yet to come across an eCommerce project that required a "generic shop". Every client has a different set of requirements that effect the look of a job, but the basic workflow behind it too.
+
+      %p Trevor Towner jewellery is a case in point. As well as the usual messing with the topology of the items in the shop (ie categories and cross category tags), they needed a stock control system that not only informed the customer if an item is out of stock, but also acted as a stock history for the brick & mortar shop as well. Taking that basic brief and coming up with an architecture and an interface that anticipates any problems is what I do.
+
+      %p Matched to that is a design that attempts to raise the perception of quality above a simple template or wordpress plug-in, trying to present a subtle and polished web site that doesn't overpower the products themselves. And true to my promise to myself that all sites from now on would be responsive designs, it reformats on small and mobile screens to allow customers to access it any way they want.
+
+
+    %aside.cm-work-aside
+      %dl
+        %dt Year:
+        %dd 2011
+
+        %dt Employer:
+        %dd n/a
+
+        %dt Client:
+        %dd n/a
+
+        %dt Tech:
+        %dd
+          %ul
+            %li Vanilla JS
+            %li CSS3 transitions
+            %li Responsive design
+            %li TouchEvents
+            %li PHP
+
+        %dt Links:
+        %dd
+          %ul
+            %li 
+              %a{:href => 'http://craigmorey.co.uk/arch/bardot/5/', :target => '_blank'} Demo
+            %li 
+              %a{:href => 'https://github.com/pixelthing/atomoco-bardot', :target => '_blank'} Github
+
+  .clear
+
+= partial "../../footer"
