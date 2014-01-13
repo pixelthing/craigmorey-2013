@@ -7,10 +7,10 @@
     %b.cm-nav-title menu
   %menu.cm-nav-menu
     %li{:class => nav_on('home',in_section)}
-      %a{:href => '/'} home
+      %a{:href => "#{site_root}"} home
     %li{:class => nav_on('work',in_section)}
-      %a{:href => '/portfolio'} work
+      %a{:href => "#{site_root}portfolio"} work
     %li{:class => nav_on('blog',in_section)}
-      %a{:href => '/blog'} blog
+      %a{:href => "#{site_root}blog"} blog
     %li{:class => nav_on('social',in_section)}
-      %a{:href => '/social'} social
+      %a{:href => "#{site_root}social"} social
