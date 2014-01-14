@@ -15,13 +15,16 @@ cmJs.workNav = (function() {
 
   /* on page load, move the portfolio nav to the right place, then set the transition up */
   initNav = function() {
+    if ($('.cm-work-header').length < 1) {
+      return;
+    }
     setTimeout(function(){
       $('.cm-work-header').addClass('ready');
     },500)
     var page = window.location.pathname;
     var pageFrags = page.split('/');
     var pagePath = pageFrags[(pageFrags.length - 2)];
-    var foundNode = $('a[href="../' + pagePath + '/"]');
+    var foundNode = $('#' + pagePath);
     var newSlot = foundNode.attr('class').replace('slot-','open-');
     moveMenu(newSlot);
     setTimeout(function(){
@@ -47,7 +50,7 @@ cmJs.workNav = (function() {
         }
       }
       moveMenu('open-' + newSlotPos);
-      $("img.lazy").trigger('workNavMove');
+      $("img.lazy").trigger('appear');
     })
   },
 
@@ -84,9 +87,8 @@ cmJs.workNav = (function() {
   },
 
   loadImages = function() {
-    $("img.lazy").lazyload({
-      event : "workNavMove"
-    });
+    console.log('xxxxxx')
+    $("img.lazy").lazyload();
   },
 
   postClick = function() {

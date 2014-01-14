@@ -2,5 +2,9 @@
 
 = partial "../nav", :locals => {:in_section => @section}
 
-%ul
-  = partial "list"
+.cm-container
+  .cm-work-list-title 
+    %h1 work
+    %p Just a few of the projects I've worked on.
+  %ul.cm-work-list
+    = partial "list"
