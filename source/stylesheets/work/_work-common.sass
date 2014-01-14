@@ -42,18 +42,19 @@
 
 .cm-work-list
   list-style: none
-  margin: 0 -20px
+  margin: 0 -15px
   padding: 0
   text-align: center
   li
     display: inline-block
     margin: 0 0 10px
-    padding: 20px
+    padding: 15px
     @for $i from 1 through 30
       &:nth-child(#{$i}) img
         -webkit-animation-delay: #{(100 * $i)}ms
   figure
     margin: 0
+    padding: 5px
     background-color: $fore2
     border-radius: 150px
     +transform(scale(0.9))
@@ -73,6 +74,7 @@
     text-decoration: none
     &:hover
       figure
+        background-color: $back1
         +transform(scale(1))
       h4
         +transform(translateY(5px))
