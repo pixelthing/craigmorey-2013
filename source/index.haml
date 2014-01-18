@@ -20,8 +20,12 @@
 
 %section.cm-container.instagram-container
   %header
-    %h1 Instagram feed
-    %a{:href => 'http://instagram.com/pixelthing',:target => '_blank'} more
+    %h1 
+      %span.icon-instagram
+      Instagram feed
+    %a{:href => 'http://instagram.com/pixelthing',:target => '_blank'} 
+      %span.icon-link
+      more
   /* instagram feed fetched in the front-end using a third party script "instafeed.js" */
   #instafeed
   .clear
@@ -29,21 +33,34 @@
 
 %section.cm-container.blog-container
   %header
-    %h1 Recent blog posts
-    %a{:href => 'http://craigmorey.co.uk/blog/',:target => '_blank'} more
+    %h1 
+      %span.icon-ampersand
+      Recent blog posts
+    %a{:href => 'http://craigmorey.co.uk/blog/'} 
+      %span.icon-link
+      more
   .posts
   .clear
 
 .cm-container.strip3
   %section.cm-container-half.codepen-container.penstrans
     %header
-      %h1 Recent codepen.io pens
-      %a{:href => 'http://codepen.io/pixelthing',:target => '_blank'} more
+      %h1 
+        %span.icon-codepen
+        Recent codepen.io pens
+      %a{:href => 'http://codepen.io/pixelthing',:target => '_blank'} 
+        %span.icon-link
+        more
     .pens
 
   %section.cm-container-half.extra-container
     %header
-      %h1 Empty box
+      %h1 
+        %span.icon-code
+        Random work
+      %a{:href => 'portfolio'} 
+        %span.icon-link
+        more
 
   .clear
 

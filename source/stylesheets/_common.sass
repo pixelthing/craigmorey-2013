@@ -9,7 +9,6 @@ body
   font-family: $normal-font
   font-size: $base-font-size
   text-align: center
-
 h1
   font-size: 2em
 h2
@@ -18,6 +17,15 @@ h3
   font-size: 1.2em
 h4
   font-size: 1em
+a
+  color: $fore1
+  +transition(color 200ms)
+  &:visited
+    color: $fore1visited
+  &:hover
+    color: #000
+  &:active
+    color: #fff
 
 /* basic formatting for *any* browser (and I mean from an old S40 phone to a media query disabled browser) */
 .cm-container
@@ -42,7 +50,6 @@ h4
       position: absolute
       top: 0.5em
       right: 0
-      color: $fore1
 
 .cm-container-half
   float: left
@@ -160,6 +167,33 @@ h4
       +transition-delay(200ms)
     .cm-nav-menu
       opacity: 1
+
+/* footer */
+
+footer.cm-container
+  clear: both 
+  margin-top: 2em
+  padding: 1em
+  color: #fff
+  background: $text-color-lightest
+  text-align: center
+  a
+    display: inline-block
+    text-decoration: none
+
+.cm-footer-nav
+  a
+    padding: 0.5em 1em 0
+
+
+.social
+  max-width: 56em
+  margin: 0 auto
+  a
+    width: 6em
+    margin: 0 1em 1em 0
+    padding: 0.5em
+    text-align: left
 
 /* misc */
 
