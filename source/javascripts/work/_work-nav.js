@@ -2,7 +2,7 @@ var cmJs = cmJs || {};
 
 cmJs.workNav = (function() {
 
-  var slotNav = $('.cm-work-nav'),
+  var slotNav = $('.cm-work-nav-shuttle'),
   slotLinks = slotNav.find('a'),
 
   init = function () {
@@ -15,11 +15,11 @@ cmJs.workNav = (function() {
 
   /* on page load, move the portfolio nav to the right place, then set the transition up */
   initNav = function() {
-    if ($('.cm-work-header').length < 1) {
+    if ($('.cm-work-nav').length < 1) {
       return;
     }
     setTimeout(function(){
-      $('.cm-work-header').addClass('ready');
+      $('.cm-work-nav').addClass('ready');
     },500)
     var page = window.location.pathname;
     var pageFrags = page.split('/');
@@ -80,21 +80,20 @@ cmJs.workNav = (function() {
 
   mainNavHover = function() {
     $('.cm-nav-in-work').hover(function(){
-      $('.cm-work-header').addClass('open');
+      $('.cm-work-nav').addClass('open');
     },function(){
-      $('.cm-work-header').removeClass('open');
+      $('.cm-work-nav').removeClass('open');
     })
   },
 
   loadImages = function() {
-    console.log('xxxxxx')
     $("img.lazy").lazyload();
   },
 
   postClick = function() {
     slotLinks.click(function(ev){
       // stop the menu from rolling back if your mouse rolls off it
-      $('.cm-work-header').removeClass('ready');
+      $('.cm-work-nav').addClass('open');
       ev.preventDefault();
       var href = this.href;
       var newSlot = $(this).attr('class').replace('slot-','open-');
