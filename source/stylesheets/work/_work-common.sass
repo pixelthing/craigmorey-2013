@@ -65,6 +65,9 @@ footer.cm-container
   a
     color: $text-color-light
     text-decoration: none
+    &:visited
+      figure
+        background-color: $fore2visited
     &:hover
       figure
         background-color: $back1
@@ -162,6 +165,9 @@ footer.cm-container
   a 
     color: #fff
     text-decoration: none
+    &:visited
+      h4
+        color: #ddd
     &:hover
       figure
         opacity: 1
@@ -276,7 +282,7 @@ footer.cm-container
     +transform(scale3d(0.9,0.9,1))
     +transition(all 300ms)
     &:hover
-      border-color: $back1
+      border-color: $back1 !important
       +transform(scale3d(1,1,1))
 
 /* article body */
@@ -299,6 +305,15 @@ footer.cm-container
     -webkit-animation-duration: 1000ms
     -webkit-animation-fill-mode: forwards
     -webkit-animation-delay: 800ms
+
+  a
+    color: $text-color-light
+    &:visited
+      color: $text-color-dark
+    &:hover
+      color: $fore2
+    &:active
+      color: #000
 
   dl,dt,dd,ul,li
     margin: 0
