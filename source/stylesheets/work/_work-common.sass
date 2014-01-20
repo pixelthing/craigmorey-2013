@@ -129,7 +129,7 @@ footer.cm-container
   right: 0
   height: 75px
   overflow: hidden
-  background: rgba($back1, 0.4)
+  background: rgba(#000, 0.4)
   +transition(all 300ms)
   +transform(translateY(0))
   li
@@ -167,7 +167,7 @@ footer.cm-container
     text-decoration: none
     &:visited
       h4
-        color: #ddd
+        color: #ccc
     &:hover
       figure
         opacity: 1
@@ -320,7 +320,8 @@ footer.cm-container
     padding: 0
     list-style: none
     dt
-      color: $text-color-light
+      color: $text-color-lightest
       font-weight: bold
     dd
-      margin: 0.2em 0 1em
+      margin: 0.2em 0 1em 1.4em
+      color: $text-color-light
