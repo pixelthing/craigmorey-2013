@@ -4,9 +4,11 @@ cmJs.workNav = (function() {
 
   var slotNav = $('.cm-work-nav-shuttle'),
   slotLinks = slotNav.find('a'),
+  currentSlot = false,
 
   init = function () {
     initNav();
+    setupKeyNav();
     initPrevNext();
     loadImages();
     mainNavHover();
@@ -25,11 +27,47 @@ cmJs.workNav = (function() {
     var pageFrags = page.split('/');
     var pagePath = pageFrags[(pageFrags.length - 2)];
     var foundNode = $('#' + pagePath);
-    var newSlot = foundNode.attr('class').replace('slot-','open-');
-    moveMenu(newSlot);
+    currentSlot = parseInt(foundNode.attr('class').replace('slot-',''));
+    currentSlotClass = 'open-' + currentSlot;
+    moveMenu(currentSlotClass);
     setTimeout(function(){
       slotNav.addClass('ready');
     },0)
+  },
+
+  setupKeyNav = function() {
+    var prevUrl = false;
+    if (currentSlot > 1) {
+      prevUrl = slotLinks[(currentSlot - 2)].href;
+    }
+    var nextUrl = false;
+    if (currentSlot < (slotLinks.length)) {
+      nextUrl = slotLinks[(currentSlot)].href;
+    }
+    key('left', function(){
+      if (prevUrl) {
+        $('.cm-work-nav').addClass('open');
+        self.location = prevUrl;
+      } else {
+        flashWorkNav();
+      }
+    });
+    key('right', function(){
+      if (nextUrl) {
+        $('.cm-work-nav').addClass('open');
+        self.location = nextUrl;
+      } else {
+        flashWorkNav();
+      }
+    });
+  },
+
+  flashWorkNav = function() {
+    var workNavJQ = $('.cm-work-nav');
+    workNavJQ.addClass('open flash');
+    setTimeout(function(){
+      workNavJQ.removeClass('flash');
+    },200);
   },
 
   initPrevNext = function() {

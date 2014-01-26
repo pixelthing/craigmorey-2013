@@ -175,6 +175,7 @@ footer.cm-container
   b 
     display: block
   a 
+    display: block
     color: #fff
     text-decoration: none
     &:visited
@@ -186,6 +187,9 @@ footer.cm-container
       h4
         color: $text-color-dark
         background-position: 0 0
+  &.flash
+    +transition(all 0)
+    background-color: #fff
   &.ready
     +transform(translateY(-50px))  
     .cm-work-nav-shuttle
@@ -217,24 +221,40 @@ footer.cm-container
   &:hover
     background: #fff
   &:before
-    content: ''
+    content: '\e612'
     display: block
     position: absolute
-    top: 50%
+    top: 47%
     left: 50%
-    width: 0
-    height: 0
-    margin: -10px 0 0 -5px
-    border-top: transparent solid 5px 
-    border-bottom: transparent solid 5px 
-    border-right: #000 solid 8px 
+    width: 1em
+    height: 1em
+    margin: -0.5em 0 0 -0.5em
+    color: $text-color-light
+    font-family: cm-icon
+    font-size: 24px
+    line-height: 1
 .cm-work-nav-next
   left: auto
   right: 0
   &:before
-    margin: -10px 0 0 -3px
-    border-right: none
-    border-left: #000 solid 8px 
+    content: '\e614'
+
+/* big title */
+
+.cm-work-title
+  position: absolute
+  top: 7em
+  left: 10px
+  right: 10px
+  h1
+    color: #fff
+    font-family: $heading-font
+    font-weight: $heading-font-weight
+    font-style:  $heading-font-style
+    font-size: 6em
+    line-height: 1
+    text-align: center
+    text-shadow: 0 0 1em rgba($text-color-dark,0.9)
 
 /* article featured image */
 
@@ -245,26 +265,12 @@ footer.cm-container
   overflow: hidden
   background: #000
   img
+    display: block
     width: 100%
     .cssanimations &
       -webkit-animation-name: fade-in
       -webkit-animation-duration: 1000ms
       -webkit-animation-fill-mode: forwards
-
-.cm-work-title
-  position: absolute
-  top: 12em
-  left: 10px
-  right: 10px
-  h1
-    color: #fff
-    font-family: $heading-font
-    font-weight: $heading-font-weight
-    font-style:  $heading-font-style
-    font-size: 8em
-    line-height: 1
-    text-align: center
-    text-shadow: 0 0 12px rgba($text-color-dark,0.8)
 
 /* article thumbs */
 
