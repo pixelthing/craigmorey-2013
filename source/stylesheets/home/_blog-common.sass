@@ -20,17 +20,20 @@
     color: $fore1
     &:visited
       color: $fore1visited
-    &:hover
-      +transform(translateY(-2.5em))
-      color: #000
-      h3
-        color: #000
-      p
-        +transform(translateY(0))
-        +transition-delay(200ms)
-        opacity: 1
     &:active
-      color: #fff
+      color: #000
+    .no-touch &
+      &:hover
+        +transform(translateY(-2.5em))
+        color: #000
+        h3
+          color: #000
+        p
+          +transform(translateY(0))
+          +transition-delay(200ms)
+          opacity: 1
+      &:active
+        color: #fff
     &:after
       content: ''
       position: absolute
