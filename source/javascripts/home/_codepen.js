@@ -29,7 +29,7 @@ cmJs.codepen = (function() {
           for(var i = 0; i < maxItems; i++) {
             var item = pensArray[i];
             buffer += '<article>';
-            buffer += '<a href="' + item.url.pen + '" target="_blank"><h2>' + item.title + '</h2><dl>';
+            buffer += '<a href="' + item.url.pen + '" target="_blank"><h3>' + item.title + '</h3><dl>';
             if (parseInt(item.views) > 0) {
               buffer += '<dt class="pen-views">Views: </dt><dd>' + item.views + '</dd>'
             }
