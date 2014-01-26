@@ -14,15 +14,15 @@
   .cm-container
 
     .cm-work-thumbs
-      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => "The homepage was fresh, and like the rest of the site was built totally in 'em' dimensions to make accessibility and zooming as good as possible (just before it became common practice to rely on the later browser zooming controls)."}
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => "The homepage was fresh, and like the rest of the site was built totally in 'em' dimensions to make accessibility and zooming as good as possible (just before it became common practice to rely on the later browser zooming controls instead)."}
         %img{:src => 'pic1s.jpg'}
       %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => 'Although there was a lot of text content throughout the site, we tried to use as many testimonials and student images as we could without having to budget for a new photoshoot.'}
         %img{:src => 'pic2s.jpg'}
-      %a.fancybox{:href => 'pic3.jpg', :rel => 'project', :title => 'The student life area was supposed to be less formal, so we tried to give it a more interactive feel.'}
+      %a.fancybox{:href => 'pic3.jpg', :rel => 'project', :title => 'The student life area was meant to be less formal, so we tried to give it a more interactive feel.'}
         %img{:src => 'pic3s.jpg'}
-      %a.fancybox{:href => 'pic4.jpg', :rel => 'project', :title => 'Much time was taken integrating with the college\'s course database, and also building a natural search engine to make the huge database more accessible.'}
+      %a.fancybox{:href => 'pic4.jpg', :rel => 'project', :title => 'Much time was taken integrating with the college\'s course database, and we also built a natural language search engine to make the huge course list more accessible.'}
         %img{:src => 'pic4s.jpg'}
-      %a.fancybox{:href => 'pic5.jpg', :rel => 'project', :title => 'Courses often had ties with other modules, so an internal search engine was built and tweaked to automatically generate links to similar courses.'}
+      %a.fancybox{:href => 'pic5.jpg', :rel => 'project', :title => 'Courses often had ties with other modules, so an internal search engine was built and tweaked to automatically generate cross links to similar courses.'}
         %img{:src => 'pic5s.jpg'}
       .clear
 
@@ -30,13 +30,13 @@
 
     .cm-work-main
       
-      %p Brockenhurst College is a large further education college in the New Forest, with around 4000 full-time and part-time students. It was a large project that I had to tie in with a brand refresh that was being carried out by another agency. There were to be a large amount of web site administrators, that as well as needing training, also needed access to different areas of the website. As part of a team I helped co-ordinate the large task of creating the shell and the content, as well as leading design and coding.
+      %p Brockenhurst College is a large further education college in the New Forest, with around 4000 full-time and part-time students. It was a large project that I had to tie in with a brand refresh that was being carried out by seperate agency. There were to be a large amount of web site administrators so as well as building we had to consider training too. As part of the project team I helped co-ordinate the task of structuring the information architecture then building the CMS and templates, as well as being involved in the design and content.
 
-      %p But the most interesting part of the project was the dealing with traffic issues. In it's first winter, there were several days of snow and the college administration told the student body to check the website at 7pm to see what decision was taken about opening the college the following day. In the minutes before 7pm, two thousand students tried to get to the homepage, the site and the server became overloaded with traffic, leading to many people failing to load the site, and keep hitting refresh, adding to the problem.
+      %p The most interesting part of the project came much later, when we had to deal with peak traffic issues. In it's first winter, heavy snow was forcast and the college administration informed the students to check the website at 7pm to see what if the college would open it's doors the following day. In the minutes before 7pm, two thousand students simultaneously tried to get to the homepage and the site and the server became overloaded with traffic. This lead to many people failing to load the site, who of course kept hitting refresh, adding to our problems.
 
-      %p In all, we had 30,000 page views in the course of 15 minutes.
+      %p In all, we had 30,000 page view attempts in the course of 15 minutes, on a server built to deal with 1000.
 
-      %p The next morning we'd written my first page and query caching system. But not only that, we'd built a "crisis homepage", a passworded script which made no database calls and allowed administrators to set up a simple temporary homepage for instances such as snow days and get the information out to a much greater amount of people. The following two years also had snow days with google analytics showing massive traffic spikes - with no loss of service to any visitor.
+      %p The next morning we'd written our first page and query caching system. But not only that, we'd built a "crisis homepage", a passworded script which made no database calls and allowed administrators to set up a simple temporary homepage for instances such as snow days and get the information out to a much greater amount of people. The following two years also had snow days where google analytics showing massive traffic spikes - but with no loss of service to any visitor.
 
       %p We also advised all clients from that point on to never inform four thousand people to visit a website at the same time…
 
@@ -66,6 +66,7 @@
             %li Mootools JS
             %li MindType CMS
             %li PHP
+            %li MySQL
 
         %dt 
           %span.icon-link
@@ -73,7 +74,7 @@
         %dd
           %ul
             %li 
-              Website refreshed since
+              %a{:href => 'http://www.broack.ac.uk', :target => '_blank'} Website refreshed since
             %li 
               %a{:href => 'http://www.mindworks.co.uk', :target => '_blank'} MindWorks
 
