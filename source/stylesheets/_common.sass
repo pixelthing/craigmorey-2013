@@ -159,17 +159,17 @@ a
   margin: -2em 0 -2em -100px
   font-size: 1.2em
   overflow: hidden
-  &:hover
-    height: 20em
-    .cm-nav-hamburger
-      opacity: 0
-      +transform(scale3d(3,3,3))
-    .cm-nav-title
-      opacity: 1
-      +transform(scale3d(1,1,1))
-      +transition-delay(200ms)
-    .cm-nav-menu
-      opacity: 1
+.no-touch .cm-nav:hover,.cm-nav.open
+  height: 20em
+  .cm-nav-hamburger
+    opacity: 0
+    +transform(scale3d(3,3,3))
+  .cm-nav-title
+    opacity: 1
+    +transform(scale3d(1,1,1))
+    +transition-delay(200ms)
+  .cm-nav-menu
+    opacity: 1
 
 /* footer */
 

@@ -4,19 +4,24 @@ cmJs.workNav = (function() {
 
   var slotNav = $('.cm-work-nav-shuttle'),
   slotLinks = slotNav.find('a'),
+  touchNavOpen = false,
   currentSlot = false,
 
   init = function () {
-    initNav();
-    setupKeyNav();
-    initPrevNext();
+    setupNav();
+    setupPrevNext();
     loadImages();
     mainNavHover();
-    postClick();
+    if (Modernizr.touch === true) {
+      setupTabletNav();
+    } else {
+      setupNavKey();
+      setUpNavClick();
+    }
   },
 
   /* on page load, move the portfolio nav to the right place, then set the transition up */
-  initNav = function() {
+  setupNav = function() {
     if ($('.cm-work-nav').length < 1) {
       return;
     }
@@ -35,7 +40,7 @@ cmJs.workNav = (function() {
     },0)
   },
 
-  setupKeyNav = function() {
+  setupNavKey = function() {
     var prevUrl = false;
     if (currentSlot > 1) {
       prevUrl = slotLinks[(currentSlot - 2)].href;
@@ -70,7 +75,19 @@ cmJs.workNav = (function() {
     },200);
   },
 
-  initPrevNext = function() {
+  setupTabletNav = function() {
+    $('.cm-work-nav a').click(function(ev){
+      if (cmJs.workNav.touchNavOpen === false) {
+        ev.preventDefault();
+        $('.cm-work-nav').addClass('open');
+        cmJs.workNav.touchNavOpen = true;
+      } else {
+        $('.cm-work-featured').addClass('hidden');
+      }
+    })
+  },
+
+  setupPrevNext = function() {
     $('.cm-work-nav-prev,.cm-work-nav-next').click(function(){
       var slotsVisible = ($(window).width()/150);
       var slotsToMove = Math.round((slotsVisible - 1)/2);
@@ -128,7 +145,7 @@ cmJs.workNav = (function() {
     $("img.lazy").lazyload();
   },
 
-  postClick = function() {
+  setUpNavClick = function() {
     slotLinks.click(function(ev){
       // stop the menu from rolling back if your mouse rolls off it
       $('.cm-work-nav').addClass('open');
@@ -145,6 +162,7 @@ cmJs.workNav = (function() {
   $(init);
 
   return {
-    init: function() { $(init); }
+    init: function() { $(init); },
+    touchNavOpen: touchNavOpen
   };
 }(jQuery));

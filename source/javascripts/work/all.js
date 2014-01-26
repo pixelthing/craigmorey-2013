@@ -2,6 +2,8 @@
 //= require vendor/jquery.lazyload.min.js
 //= require vendor/jquery.fancybox.pack.js
 //= require vendor/jquery.fancybox-media.js
+//= require vendor/fastclick.js
+//= require _nav.js
 //= require work/_work-nav.js
 
 var cmJs = cmJs || {};
@@ -10,6 +12,7 @@ cmJs.work = (function() {
   
   var init = function() {
     setupFancybox();
+    setupFastClick();
   },
 
   setupFancybox = function() {
@@ -29,6 +32,12 @@ cmJs.work = (function() {
           type : 'inside'
         }
       }
+    });
+  },
+
+  setupFastClick = function() {
+    $(function() {
+      FastClick.attach(document.body);
     });
   }
 

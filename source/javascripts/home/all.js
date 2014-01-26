@@ -2,6 +2,8 @@
 //= require vendor/jquery.fancybox-media.js
 //= require vendor/instafeed.js
 //= require vendor/jquery.jfeed.js
+//= require vendor/fastclick.js
+//= require _nav.js
 //= require home/_instafeed.js
 //= require home/_blog.js
 //= require home/_codepen.js
@@ -11,6 +13,7 @@ var cmJs = cmJs || {};
 cmJs.home = (function() {
   
   var init = function() {
+    setupFastClick();
     setupFancybox();
   },
 
@@ -33,6 +36,12 @@ cmJs.home = (function() {
           type : 'inside'
         }
       }
+    });
+  },
+
+  setupFastClick = function() {
+    $(function() {
+      FastClick.attach(document.body);
     });
   }
 
