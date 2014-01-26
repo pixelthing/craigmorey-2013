@@ -10,5 +10,330 @@
 /* vendor */
 @import "vendor/jquery.fancybox"
 
-/* home */
-@import "work-common"
+/* basics modified */
+a
+  color: $fore2
+  &:visited
+    color: $fore2visited
+  &:hover
+    color: #fff
+  &:active
+    color: #000
+footer.cm-container
+  background-color: $text-color-light
+
+/* work index page */
+
+.cm-work-list-title
+  opacity: 0
+  -webkit-animation-name: fade-in
+  -webkit-animation-duration: 1000ms
+  -webkit-animation-fill-mode: forwards
+  -webkit-animation-delay: 400ms
+  h1
+    margin: 100px 0 0
+    color: $text-color-dark
+    font-family: $heading-font
+    font-weight: $heading-font-weight
+    font-style:  $heading-font-style
+    font-size: 8em
+    line-height: 1
+    text-align: center
+
+  p
+    margin: 0 0 1em
+    color: $text-color-light
+    text-align: center
+
+.cm-work-list
+  list-style: none
+  margin: 0 -15px
+  padding: 0
+  text-align: center
+  li
+    display: inline-block
+    margin: 0 0 10px
+    padding: 15px
+    @for $i from 1 through 30
+      &:nth-child(#{$i}) img
+        -webkit-animation-delay: #{(100 * $i)}ms
+  figure
+    margin: 0
+    padding: 5px
+    background-color: $fore2
+    border-radius: 150px
+    +transform(scale(0.9))
+    +transition(all 300ms)
+
+
+  img 
+    display: block
+    border-radius: 150px
+    .cssanimations &
+      opacity: 0
+      -webkit-animation-name: scale-bounce
+      -webkit-animation-duration: 500ms
+      -webkit-animation-fill-mode: forwards
+  a
+    color: $text-color-light
+    text-decoration: none
+    &:visited
+      figure
+        background-color: $fore2visited
+    &:hover
+      figure
+        background-color: $back1
+        +transform(scale(1))
+      h4
+        +transform(translateY(5px))
+    &:active
+      figure
+        opacity: 0.3
+  h4
+    margin: 0 0 0.5em
+    font-weight: normal
+    text-align: center
+    +transition(transform 300ms)
+    b 
+      display: block
+
+/* main navigation */
+
+.cm-nav-in-work
+  .cm-nav-button
+    color: $text-color-light
+    background: $fore2
+  .cm-nav-title
+    color: $text-color-light
+  .cm-nav-hamburger
+    .bun,.filling,.base
+      background: $text-color-light
+  a
+    color: $fore2
+    &:hover
+      background: $fore2
+
+/* portfolio navigation */
+
+.cm-work-nav-shuttle
+  list-style: none
+  position: absolute
+  top: 0
+  left: 50%
+  width: 4000px
+  margin: 0
+  padding: 0
+  text-align: left
+
+  /* position */
+  @for $i from 1 through 30
+    &.open-#{$i}
+      margin-left: -#{(150 * $i) - 75}px
+      .slot-#{$i} h4
+        background: transparent
+        opacity: 0
+
+.cm-work-nav
+  position: absolute
+  z-index: 10
+  top: 0
+  left: 0
+  right: 0
+  height: 75px
+  overflow: hidden
+  background: rgba(#000, 0.4)
+  +transition(all 300ms)
+  +transform(translateY(0))
+  li
+    float: left
+    width: 150px
+  figure
+    display: block
+    width: 150px
+    height: 75px
+    margin: 0
+    padding: 0
+    background: #fff
+    opacity: 0.5
+    overflow: hidden
+    +transition(opacity 500ms)
+    img 
+      margin-top: -47px
+  h4
+    height: 0
+    opacity: 0
+    margin: 0
+    padding: 0 10px
+    @include background(linear-gradient(rgba(#fff,1) 0%, rgba(#fff,0.4) 50%, rgba(#fff,0) 50%))
+    background-size: 100% 150px
+    background-position: 0 -75px
+    background-repeat: no-repeat
+    font-weight: normal
+    overflow: hidden
+    +transform(scale3d(1,1,1))
+    +transition(all 500ms)
+  b 
+    display: block
+  a 
+    color: #fff
+    text-decoration: none
+    &:visited
+      h4
+        color: #ccc
+    &:hover
+      figure
+        opacity: 1
+      h4
+        color: $text-color-dark
+        background-position: 0 0
+  &.ready
+    +transform(translateY(-50px))  
+    .cm-work-nav-shuttle
+      +transition(margin-left 300ms)
+
+  &:hover,&.open
+    height: 150px
+    +transform(translateY(0))
+    h4
+      opacity: 1
+      height: 55px
+      padding: 10px
+    figure
+      opacity: 1
+
+.cm-work-nav-prev,.cm-work-nav-next
+  position: absolute
+  left: 0
+  top: 0
+  z-index: 1
+  width: 30px
+  height: 75px
+  background: $fore2
+  opacity: 0
+  cursor: pointer
+  +transition(all 500ms)
+  &.ready
+    opacity: 1
+  &:hover
+    background: #fff
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 0
+    height: 0
+    margin: -10px 0 0 -5px
+    border-top: transparent solid 5px 
+    border-bottom: transparent solid 5px 
+    border-right: #000 solid 8px 
+.cm-work-nav-next
+  left: auto
+  right: 0
+  &:before
+    margin: -10px 0 0 -3px
+    border-right: none
+    border-left: #000 solid 8px 
+
+/* article featured image */
+
+.cm-work-featured
+  position: relative
+  max-height: 80vh
+  margin: -10px -10px 0
+  overflow: hidden
+  background: #000
+  img
+    width: 100%
+    .cssanimations &
+      -webkit-animation-name: fade-in
+      -webkit-animation-duration: 1000ms
+      -webkit-animation-fill-mode: forwards
+
+.cm-work-title
+  position: absolute
+  top: 12em
+  left: 10px
+  right: 10px
+  h1
+    color: #fff
+    font-family: $heading-font
+    font-weight: $heading-font-weight
+    font-style:  $heading-font-style
+    font-size: 8em
+    line-height: 1
+    text-align: center
+    text-shadow: 0 0 12px rgba($text-color-dark,0.8)
+
+/* article thumbs */
+
+.cm-work-thumbs
+  margin: -37px 0 40px 0
+  text-align: center
+  a 
+    display: inline-block
+    width: 75px
+    height: 75px
+    margin: 0 30px 0 0
+    overflow: none
+    .cssanimations &
+      opacity: 0
+      -webkit-animation-name: fade-up
+      -webkit-animation-duration: 1000ms
+      -webkit-animation-fill-mode: forwards
+    @for $i from 2 through 6
+      &:nth-child(#{$i})
+        -webkit-animation-delay: #{(400 * $i)}ms
+  img
+    display: block
+    width: 100%
+    height: 100%
+    border-radius: 50px
+    border: 5px solid $fore2
+    +transform(scale3d(0.9,0.9,1))
+    +transition(all 300ms)
+    &:hover
+      border-color: $back1 !important
+      +transform(scale3d(1,1,1))
+
+/* article body */
+
+.cm-work-main
+  float: left
+  width: col-size(9)
+  margin: 0 0 $col_margin 0
+  font-size: 1.2em
+  p
+    margin: 1em 0 1.5em
+
+.cm-work-aside
+  float: left
+  width: col-size(3)
+  margin: 1em 0 $col_margin $col_margin 
+  .cssanimations &
+    opacity: 0
+    -webkit-animation-name: fade-up
+    -webkit-animation-duration: 1000ms
+    -webkit-animation-fill-mode: forwards
+    -webkit-animation-delay: 800ms
+
+  a
+    color: $text-color-light
+    &:visited
+      color: $text-color-dark
+    &:hover
+      color: $fore2
+    &:active
+      color: #000
+
+  dl,dt,dd,ul,li
+    margin: 0
+    padding: 0
+    list-style: none
+    dt
+      color: $text-color-lightest
+      font-weight: bold
+    dd
+      margin: 0.2em 0 1em 1.4em
+      color: $text-color-light
