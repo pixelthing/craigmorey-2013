@@ -4,6 +4,11 @@
     -webkit-animation-delay: 500ms
 #instafeed
   margin-top: 5px
+  &.waiting
+    padding-bottom: col-size(4)
+    @include background(linear-gradient(-45deg, $back1 13px, $text-color-lightest 14px, $back1 15px))
+    background-size: 20px 20px
+    -webkit-animation: roll-background 300ms linear infinite
   figure 
     position: relative
     float: left

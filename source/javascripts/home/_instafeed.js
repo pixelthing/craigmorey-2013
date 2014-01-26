@@ -18,6 +18,9 @@ cmJs.instafeed = (function() {
       error: function(){
         alert('oops, instagram isn\'t playing nice today.');
       },
+      success: function() {
+        $('#instafeed').removeClass('waiting');
+      },
       after: pictureInit
     });
     feed.run();
