@@ -11,6 +11,7 @@ cmJs.workNav = (function() {
         ev.preventDefault();
         if (touchNavOpen === false) {
           $('.cm-nav').addClass('open');
+          $('#head').addClass('nav-over');
           touchNavOpen = true;
           if (cmJs.workNav != undefined) {
             $('.cm-work-nav').addClass('open');
@@ -18,6 +19,7 @@ cmJs.workNav = (function() {
           }
         } else {
           $('.cm-nav').removeClass('open');
+          $('#head').removeClass('nav-over');
           touchNavOpen = false;
           if (cmJs.workNav != undefined) {
             $('.cm-work-nav').removeClass('open');

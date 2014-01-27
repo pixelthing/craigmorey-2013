@@ -22,7 +22,7 @@ cmJs.blogFeed = (function() {
       var item = feed.items[i];
       var dateBreak = item.updated.indexOf(' ',14);
       var itemDate = item.updated.substring(0,dateBreak);
-      buffer += '<article><a href="' + item.link + '"><h3>' + itemDate + '</h3><h2>' + item.title + '</h2><p>' + item.description + '</p></a></article>';
+      buffer += '<article><a href="' + item.link + '"><h4>' + itemDate + '</h4><h3>' + item.title + '</h3><p>' + item.description + '</p></a></article>';
     }
     $('.posts').html(buffer);
   }

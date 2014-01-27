@@ -13,8 +13,25 @@ var cmJs = cmJs || {};
 cmJs.home = (function() {
   
   var init = function() {
-    setupFastClick();
+    setupNavTweaks();
     setupFancybox();
+    setupFastClick();
+  },
+
+  setupNavTweaks = function() {
+    $('.cm-nav-in-home').hover(function() {
+      hideSpot();
+    }, function() {
+      showSpot();
+    });
+  },
+
+  hideSpot = function() {
+    $('#head').addClass('nav-over');
+  },
+
+  showSpot = function() {
+    $('#head').removeClass('nav-over');
   },
 
   setupFancybox = function() {
