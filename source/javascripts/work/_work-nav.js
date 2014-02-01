@@ -50,6 +50,9 @@ cmJs.workNav = (function() {
       nextUrl = slotLinks[(currentSlot)].href;
     }
     key('left', function(){
+      if (jQuery.fancybox.isOpen === true) {
+        return;
+      }
       if (prevUrl) {
         $('.cm-work-nav').addClass('open');
         self.location = prevUrl;
@@ -58,6 +61,9 @@ cmJs.workNav = (function() {
       }
     });
     key('right', function(){
+      if (jQuery.fancybox.isOpen === true) {
+        return;
+      }
       if (nextUrl) {
         $('.cm-work-nav').addClass('open');
         self.location = nextUrl;
