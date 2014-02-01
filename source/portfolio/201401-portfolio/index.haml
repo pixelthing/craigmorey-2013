@@ -1,0 +1,74 @@
+- @section = 'work'
+
+= partial "../../nav", :locals => {:in_section => @section}
+= partial "../header"
+
+%article.cm-work-article
+
+  .cm-work-featured
+    %img{:src => 'feature.jpg'}
+    .cm-work-title
+      %h1.cm-container
+        2014 Portfolio
+
+  .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => "Touch devices had special attention paid to them, with touch events opening and closing menus in a way that just felt right."}
+        %img{:src => 'pic1s.jpg'}
+      .clear
+
+    %h2 More to show
+
+    .cm-work-main
+
+      %p Any new portfolio site for a developer is likely to be a statement of skills they're actually using at the time. So my 2012 site reflected my work in PHP, MySQL, HTML5, Mootools, CMS creation, media queries and 3D CSS. 
+
+      %p For 2014, this site was built from scratch with Ruby, Middleman, sprockets, HAML, jQuery, JavaScript patterns, grunt task running, icon fonts SASS, Compass and a bespoke grid systems.
+
+      %p Whereas in 2012 I had a vague idea of the audience and tailored the site towards them, this time around I used the feedback from that experience to build up a list of personas that made up the bulk of the likely audience. That allowed me to focus much more closely on the sort of information they were looking for and the slant on it that I wanted to portray.
+
+      %p And if you (the audience) hadn't yet realised, this work synopsis is suddenly getting extremely meta.
+
+    %aside.cm-work-aside
+      %dl
+        %dt 
+          %span.icon-calendar
+          Year:
+        %dd 2014
+
+        %dt 
+          %span.icon-employer
+          Employer:
+        %dd n/a
+
+        %dt 
+          %span.icon-client
+          Client:
+        %dd n/a
+
+        %dt 
+          %span.icon-code
+          Tech:
+        %dd
+          %ul
+            %li jQuery JS
+            %li CSS3 transitions
+            %li CSS3 animations
+            %li Ruby/Middleman
+            %li HAML
+            %li Icon fonts
+            %li SASS/Compass
+            %li Grunt
+
+        %dt 
+          %span.icon-link
+          Links:
+        %dd
+          %ul
+            %li 
+              %a{:href => 'https://github.com/pixelthing/craigmorey-2013', :target => '_blank'} Github
+
+  .clear
+
+= partial "../../footer"

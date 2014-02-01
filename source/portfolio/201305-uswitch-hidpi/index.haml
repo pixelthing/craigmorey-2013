@@ -1,0 +1,76 @@
+- @section = 'work'
+
+= partial "../../nav", :locals => {:in_section => @section}
+= partial "../header"
+
+%article.cm-work-article
+
+  .cm-work-featured
+    %img{:src => 'feature.jpg'}
+    .cm-work-title
+      %h1.cm-container
+        HiDPI
+
+  .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => "Some of the 150 icons we bundled into the uSwitch icon font. For a developer, implementation of any of these icons amounted to adding a span with the correct class name."}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => "The uSwitch homepage on a hi-res Android phone. Here, the icon font is used not only for the category links, but also the arrows on the right as well as the logo at the top."}
+        %img{:src => 'pic2s.jpg'}
+      .clear
+
+    %h2 Sharpness and consistentcy
+
+    .cm-work-main
+
+      %p One of the tasks we set ourselves at uSwitch was to be hi-resolution in as many places as possible. It wasn't just a fatuous technical goal, more and more mobile devices were coming to the website and we had to give the impression of quality to keep ourselves ahead of our competition. And crisp, non-fuzzy icons and logos were just one small way to help achieve that.
+
+      %p HiDPI iconography was fast developing as a technique, and we went through several phases, selecting the best technique for us at the time. 
+
+      %p Initially we used JavaScript image substitution, serving standard resolution images, before swapping it out for a hi-res file if the platform supported it. But the most likely platform to use this - a retina mobile phone - seemed the last one that you'd want to send duplicate images and tax the CPU with extra JS/DOM/repaints.
+
+      %p The option was to use double resolution icon PNGs, compressed well they were barely be larger than standard resolution ones. But we quickly moved to using SVGs with a PNG fallback.
+
+      %p As all the teams were designing and building their own work, a new problem arose - a muddled vocabulary of iconography, with multiple styles of tick, arrow and help icon throughout the site. The time was right to investigate using an icon font. The technology was stable and proven, better tools had made it possible, and it was so easy for designers and developers to implement (just add a CSS class for "lightbulb"), that no one would want to reinvent an icon again.
+
+      %p By instigating, rolling-out and maintaining the project, it meant a lot of initial work finding the right icons, workflow and convincing people to invest the time to use them, but slowly it became part the design language of the site.
+
+      %p Now it's 2014, and we're looking into moving back to SVG icons to only deliver the icons needed at any one time - and adding movement. But it's going to be very different this time, it's clear that uSwitch has found something more important than just retina quality, something worth keeping. A consistent design voice.
+
+    %aside.cm-work-aside
+      %dl
+        %dt 
+          %span.icon-calendar
+          Year:
+        %dd 2013
+
+        %dt 
+          %span.icon-employer
+          Employer:
+        %dd uSwitch
+
+        %dt 
+          %span.icon-client
+          Client:
+        %dd n/a
+
+        %dt 
+          %span.icon-code
+          Tech:
+        %dd
+          %ul
+            %li SVG
+            %li jQuery
+            %li Icon fonts
+            %li IcoMoon.io
+            %li SASS
+
+        %dt 
+          %span.icon-link
+          Links:
+        %dd n/a
+
+  .clear
+
+= partial "../../footer"

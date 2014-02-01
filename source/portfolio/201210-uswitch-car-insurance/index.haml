@@ -1,0 +1,77 @@
+- @section = 'work'
+
+= partial "../../nav", :locals => {:in_section => @section}
+= partial "../header"
+
+%article.cm-work-article
+
+  .cm-work-featured
+    %img{:src => 'feature.jpg'}
+    .cm-work-title
+      %h1.cm-container
+        Car insurance
+
+  .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => "The complete journey fitted on a smartphone, with attention paid to the readability of text, the size of input fields and giving the user the correct expectation of how to fill out and complete the journey"}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => "The help bubbles - that appeared on hover on a desktop browser - appeared from offscreen with a tap on the icon."}
+        %img{:src => 'pic2s.jpg'}
+      %a.fancybox{:href => 'pic3.jpg', :rel => 'project', :title => "Having tried to style form elements with jQuery plug-ins such as chosen.js, we eventually built our own custom CSS solution to give better feedback and consistent feel, without losing the benefit of using native controls."}
+        %img{:src => 'pic3s.jpg'}
+      %a.fancybox{:href => 'pic4.jpg', :rel => 'project', :title => "The tablet journey was especially catered for as traffic from this size device was growing quicker than any other category. In the tablet journey, the full 'sliding pane' effect was used, which in testing was said to make the process feel quicker."}
+        %img{:src => 'pic4s.jpg'}
+      .clear
+
+    %h2 Shrinking down to mobile
+
+    .cm-work-main
+
+      %p The uSwitch car insurance team were making something big when I joined them. Designing and building a car insurance journey had taken a large amount of research, technical skill and conversations with insurers. The aggregate set of questions you need to satisfy a panel of insurers is never going to be short, but the team had designed it to appear as simple as possible.
+
+      %p Trouble was, it was built for a desktop. The intention was always to make it responsive, and that meant solving problems bigger than just how to make a form in a 320 pixel column. The site was built as a sideways sliding set of panels, and iteration, optimisation and hardware acceleration made the UI work smoothly on tablets.
+
+      %p Help bubbles that guide the user by appearing on hover would never have worked on mobiles, there was no space and no hover. So we built a way for the same mark-up to slide in from off-canvas on a tap. And the results table had to give enough information to make a purchasing decision. 
+
+      %p The team has since taken the project even further and are seeing more mobile traffic than any other product under the uSwitch website.
+
+    %aside.cm-work-aside
+      %dl
+        %dt 
+          %span.icon-calendar
+          Year:
+        %dd 2012
+
+        %dt 
+          %span.icon-employer
+          Employer:
+        %dd uSwitch
+
+        %dt 
+          %span.icon-client
+          Client:
+        %dd n/a
+
+        %dt 
+          %span.icon-code
+          Tech:
+        %dd
+          %ul
+            %li jQuery JS
+            %li CSS3 transitions
+            %li Ruby/Rails
+            %li HAML
+            %li SASS
+
+        %dt 
+          %span.icon-link
+          Links:
+        %dd
+          %ul
+            %li 
+              %a{:href => 'http://www.uswitch.com/car-insurance/', :target => '_blank'} uSwitch Car Insurance
+
+  .clear
+
+= partial "../../footer"

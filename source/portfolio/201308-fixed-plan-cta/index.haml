@@ -1,0 +1,75 @@
+- @section = 'work'
+
+= partial "../../nav", :locals => {:in_section => @section}
+= partial "../header"
+
+%article.cm-work-article
+
+  .cm-work-featured
+    %img{:src => 'feature.jpg'}
+    .cm-work-title
+      %h1.cm-container
+        Fixed plan CTAs
+
+  .cm-container
+
+    .cm-work-thumbs
+      %a.fancybox{:href => 'pic1.jpg', :rel => 'project', :title => "Just some of the designs that were built and user tested on our way to finding the right balance of messaging."}
+        %img{:src => 'pic1s.jpg'}
+      %a.fancybox{:href => 'pic2.jpg', :rel => 'project', :title => "The final version of the results page, informing the user what's about to happen and offering an option to switch supplier when they can save the most."}
+        %img{:src => 'pic2s.jpg'}
+      .clear
+
+    %h2 Getting the message across
+
+    .cm-work-main
+
+      %p When you sign-up for a fixed plan energy tariff to heat and power your home, your energy supplier notifies you <i>eight weeks</i> before it finishes that they're about to roll you onto their standard plan. The problem is that many tariffs had a cancellation fee, chargeable right up to around <i>three weeks</i> before the end of the fixed plan. 
+
+      %p That gave the uSwitch energy team a problem. People are triggered to look for cheaper energy at that first contact - eight weeks from end - but if they went through with it then, they may end up saving nothing at all. But explaining this meant a lot of concepts to get across to the user, telling them about their current plan, their rollover plan, the increased cost of the rollover, the timing, the cancellation fee... and that's on top of telling them we could save them money. 
+
+      %p In short, focusing people on clear calls-to-action (CTA) was proving tricky.
+
+      %p To give people the best result, we decided to ask them to leave us their email address and we'd contact them when it was the the right time to switch. But communicating the benefit of this was proving quite difficult. UX testing was giving mixed results because each person that went through the process saw and latched on to a different part of the messaging and ended up feeling confused.
+
+      %p We started to build greyscale "undesigned" working prototypes to test different approaches and became more ruthless about keeping communication clear and simple. This approach left it up to the user if they wanted to know more detail which was hidden in plain site behind links. This "keep it simple, reveal the complex" plan was then put through exhaustive UX testing until we hit upon the right balance to guide users through to making the right decision for themselves, without withholding options from them. 
+
+    %aside.cm-work-aside
+      %dl
+        %dt 
+          %span.icon-calendar
+          Year:
+        %dd 2013
+
+        %dt 
+          %span.icon-employer
+          Employer:
+        %dd uSwitch
+
+        %dt 
+          %span.icon-client
+          Client:
+        %dd n/a
+
+        %dt 
+          %span.icon-code
+          Tech:
+        %dd
+          %ul
+            %li jQuery JS
+            %li HAML
+            %li SASS
+            %li Ruby/Rails
+            %li Icon fonts
+
+        %dt 
+          %span.icon-link
+          Links:
+        %dd
+          %ul
+            %li 
+              %a{:href => 'http://www.uswitch.com/gas-electricity/', :target => '_blank'} uSwitch Energy
+
+  .clear
+
+= partial "../../footer"
