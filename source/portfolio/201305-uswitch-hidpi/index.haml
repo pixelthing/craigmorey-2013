@@ -24,13 +24,13 @@
 
     .cm-work-main
 
-      %p One of the tasks we set ourselves at uSwitch was to work well on hi-resolution screens in as many places as possible. It wasn't just a fatuous technical goal, more and more mobile devices were coming to the website and we had to give the impression of quality to keep ourselves ahead of our competition. And crisp, non-fuzzy icons and logos were just one small way to help achieve that.
+      %p One of the tasks we set ourselves at uSwitch was to work well on hi-resolution (HiDPI) screens in as many places as possible. It wasn't just a fatuous technical goal, because with more and more mobile devices coming to the website, we had to give the impression of quality to keep ourselves ahead of our competition. And crisp, non-fuzzy icons and logos were just one small way to help achieve that.
 
-      %p HiDPI iconography was fast developing as a technique, and we went through several phases, selecting the best technique for us at the time. 
+      %p HiDPI iconography was fast developing as a technique, and we went through several phases, selecting the best technique available for us at the time. 
 
-      %p Initially we used JavaScript image substitution, serving standard resolution images, before swapping it out for a hi-res file if the platform supported it. But the most likely platform to use this - a retina mobile phone - seemed the last one that you'd want to send duplicate images and tax the CPU with extra JS/DOM/repaints.
+      %p Initially we used JavaScript image substitution, serving standard resolution images before swapping them out for a hi-res versions as required. But the most likely platform to take advantage of this - a modern mobile phone - seemed the last one that you'd want to send duplicate image files to, as well as putting adding more processing with extra JS/DOM/repaints.
 
-      %p The option was to use double resolution icon PNGs, compressed well they were barely be larger than standard resolution ones. But we quickly moved to using SVGs with a PNG fallback.
+      %p The option was to use double resolution icon PNGs, compressed well they were barely be larger than standard resolution ones. And after that we quickly moved to using SVGs with a PNG fallback.
 
       %p As all the teams were designing and building their own work, a new problem arose - a muddled vocabulary of iconography, with multiple styles of tick, arrow and help icon throughout the site. The time was right to investigate using an icon font. The technology was stable and proven, better tools had made it possible, and it was so easy for designers and developers to implement (just add a CSS class for "lightbulb"), that no one would want to reinvent an icon again.
 

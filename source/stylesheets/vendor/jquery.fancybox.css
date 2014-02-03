@@ -148,7 +148,7 @@
 	background-position: 0 -72px;
 }
 
-.fancybox-nav:hover span {
+.fancybox-nav:hover span,.touch .fancybox-nav span {
 	visibility: visible;
 }
 
@@ -202,7 +202,7 @@
 
 .fancybox-title {
 	visibility: hidden;
-	font: normal 13px/20px "Avenir", "Segoe UI Light", Helvetica, Arial, sans-serif;
+	font: normal inherit "Avenir", "Segoe UI Light", Helvetica, Arial, sans-serif;
 	position: relative;
 	text-shadow: none;
 	z-index: 8050;
