@@ -1,0 +1,11 @@
+RULE_0_START:
+match IN:Host into $ with ^www.craigmorey\.co\.uk$
+if matched then
+match URL into $ with ^/(.*)$
+    set OUT:Location = http://craigmorey.co.uk/$1
+    set OUT:Content-Type = text/html
+    set RESPONSE = 301
+    set BODY = Moved
+goto END
+endif
+RULE_0_END:
