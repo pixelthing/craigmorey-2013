@@ -17,6 +17,7 @@
     height: col-size(2)
     margin: 0 0 $col_margin $col_margin 
     padding: 0
+    background: #000
     -webkit-animation-name: fade-up
     -webkit-animation-duration: 500ms
     -webkit-animation-fill-mode: forwards
@@ -52,6 +53,8 @@
     +box-shadow(0 0 0 0 $fore1)
     &:hover
       +box-shadow(0 0 0 8px $fore1)
+      img
+        opacity: 0.5
       .figure-date
         opacity: 1
   .instagram-video

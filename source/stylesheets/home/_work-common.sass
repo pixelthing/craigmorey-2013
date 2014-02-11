@@ -1,13 +1,56 @@
 .work
-  article
+  @extend %clearfix
+  margin-top: 1em
+  ul
+    width: 104%
+    list-style: none
+    margin: 0 -$col_margin
+    padding: 0
+  li
+    display: none
     position: relative
     float: left
-    width: ((100%-$col_margin)/3)
-    height: ((100%-$col_margin)/3)
-    margin-left: $col_margin
-    &:first-child,&:nth-child(4)
-      margin-left: 0
-    h3
-      position: absolute
-      left: 0
-      top: 0
+    width: ((96%-$col_margin*4)/3)
+    height: ((96%-$col_margin*4)/3)
+    padding: 0 $col_margin $col_margin*2 $col_margin
+    &:nth-child(-n+6)
+      display: block
+  figure
+    margin: 0
+  h4
+    position: absolute
+    top: 0.3em
+    left: 0.5em
+    right: 0.5em
+    margin: 0
+    color: #fff
+    font-size: 1em
+    line-height: 1
+    opacity: 0
+    +transition(opacity 300ms)
+    b
+      display: block
+      color: $fore1
+      font-size: 1.5em
+      line-height: 0.8
+  a
+    display: block
+    background: #000
+    +transition(all 300ms)
+    +box-shadow(0 0 0 0 $fore1)
+    &:hover
+      +box-shadow(0 0 0 8px $fore1)
+      img
+        opacity: 0.5
+      h4
+        opacity: 1
+  img
+    display: block
+    width: 100%
+    height: auto
+
+  .csstransitions &
+    li
+      opacity: 0
+      &.on
+        opacity: 1

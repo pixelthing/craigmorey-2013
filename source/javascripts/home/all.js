@@ -1,12 +1,15 @@
 //= require vendor/jquery.fancybox.pack.js
 //= require vendor/jquery.fancybox-media.js
+//= require vendor/jquery.lazyload.min.js
 //= require vendor/instafeed.js
 //= require vendor/jquery.jfeed.js
 //= require vendor/fastclick.js
+//= require vendor/underscore.min.js
 //= require _nav.js
 //= require home/_instafeed.js
 //= require home/_blog.js
 //= require home/_codepen.js
+//= require home/_work.js
 
 var cmJs = cmJs || {};
 

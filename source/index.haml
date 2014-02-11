@@ -4,7 +4,7 @@
 
   = partial "nav", :locals => {:in_section => @section}
 
-.cm-container
+.cm-container.cm-head
   %header#head
     %h1 
       %b hello,
@@ -16,8 +16,6 @@
     .shim3
     .shim4
 
-  .clear
-
 %section.cm-container.instagram-container
   %header
     %h1 
@@ -28,7 +26,6 @@
       more
   /* instagram feed fetched in the front-end using a third party script "instafeed.js" */
   #instafeed.waiting
-  .clear
 
 
 %section.cm-container.blog-container
@@ -40,18 +37,8 @@
       %span.icon-link
       more
   .posts
-  .clear
 
 .cm-container.strip3
-  %section.cm-container-half.codepen-container.penstrans
-    %header
-      %h1 
-        %span.icon-codepen
-        Codepen.io pens
-      %a{:href => 'http://codepen.io/pixelthing',:target => '_blank'} 
-        %span.icon-link
-        more
-    .pens
 
   %section.cm-container-half.extra-container
     %header
@@ -62,44 +49,18 @@
         %span.icon-link
         more
     .work
-      %article
-        %a{:href => ''}
-          %img{:src => '', :width => 150, :height => 150, :alt => ''}
-          %h3 
-            %strong 2013
-            HiDPI
-      %article
-        %a{:href => ''}
-          %img{:src => '', :width => 150, :height => 150, :alt => ''}
-          %h3 
-            %strong 2013
-            HiDPI
-      %article
-        %a{:href => ''}
-          %img{:src => '', :width => 150, :height => 150, :alt => ''}
-          %h3 
-            %strong 2013
-            HiDPI
-      %article
-        %a{:href => ''}
-          %img{:src => '', :width => 150, :height => 150, :alt => ''}
-          %h3 
-            %strong 2013
-            HiDPI
-      %article
-        %a{:href => ''}
-          %img{:src => '', :width => 150, :height => 150, :alt => ''}
-          %h3 
-            %strong 2013
-            HiDPI
-      %article
-        %a{:href => ''}
-          %img{:src => '', :width => 150, :height => 150, :alt => ''}
-          %h3 
-            %strong 2013
-            HiDPI
+      %ul
+        = partial "portfolio/list"
 
-  .clear
+  %section.cm-container-half.codepen-container.penstrans
+    %header
+      %h1 
+        %span.icon-codepen
+        Codepen.io pens
+      %a{:href => 'http://codepen.io/pixelthing',:target => '_blank'} 
+        %span.icon-link
+        more
+    .pens
 
 = partial "footer"
 
