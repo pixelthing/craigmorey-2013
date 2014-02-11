@@ -4,6 +4,16 @@
     opacity: 0
   100%
     opacity: 1
+@-moz-keyframes fade-in
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+@keyframes fade-in
+  0%
+    opacity: 0
+  100%
+    opacity: 1
 
 @-webkit-keyframes fade-up
   0%
@@ -11,6 +21,20 @@
     opacity: 0
   100%
     -webkit-transform: translateY(0px)
+    opacity: 1
+@-moz-keyframes fade-up
+  0%
+    -moz-transform: translateY(10px)
+    opacity: 0
+  100%
+    -moz-transform: translateY(0px)
+    opacity: 1
+@keyframes fade-up
+  0%
+    transform: translateY(10px)
+    opacity: 0
+  100%
+    transform: translateY(0px)
     opacity: 1
 
 @-webkit-keyframes scale-up
@@ -23,6 +47,26 @@
   100%
     opacity: 1
     -webkit-transform: scale3d(1,1,1)
+@-moz-keyframes scale-up
+  0%
+    opacity: 1
+    transform: scale(0.01)
+  75%
+    opacity: 1
+    transform: scale(1)
+  100%
+    opacity: 1
+    transform: scale(1)
+@keyframes scale-up
+  0%
+    opacity: 1
+    transform: scale(0.01)
+  75%
+    opacity: 1
+    transform: scale(1)
+  100%
+    opacity: 1
+    transform: scale(1)
 
 @-webkit-keyframes scale-bounce
   0%
@@ -34,6 +78,26 @@
   100%
     opacity: 1
     -webkit-transform: scale3d(1.01,1.01,0)
+@-moz-keyframes scale-bounce
+  0%
+    opacity: 1
+    transform: scale(0.01)
+  75%
+    opacity: 1
+    transform: scale(1.01)
+  100%
+    opacity: 1
+    transform: scale(1.01)
+@keyframes scale-bounce
+  0%
+    opacity: 1
+    transform: scale(0.01)
+  75%
+    opacity: 1
+    transform: scale(1.01)
+  100%
+    opacity: 1
+    transform: scale(1.01)
 
 @-webkit-keyframes blup1
   0%
@@ -54,8 +118,56 @@
   100%
     opacity: 1
     -webkit-transform: scale3d(1,1,0)
+@-moz-keyframes blup1
+  0%
+    opacity: 0
+    -moz-transform: scale(0.01)
+  1%
+    opacity: 1
+    -moz-transform: scale(0.01)
+  60%
+    opacity: 1
+    -moz-transform: scale(1.1)
+  80%
+    opacity: 1
+    -moz-transform: scale(0.95)
+  90%
+    opacity: 1
+    -moz-transform: scale(1.03)
+  100%
+    opacity: 1
+    -moz-transform: scale(1)
+@keyframes blup1
+  0%
+    opacity: 0
+    transform: scale(0.01,0.01,0)
+  1%
+    opacity: 1
+    transform: scale(0.01,0.01,0)
+  60%
+    opacity: 1
+    transform: scale(1.1,1.1,0)
+  80%
+    opacity: 1
+    transform: scale(0.95,0.95,0)
+  90%
+    opacity: 1
+    -webkit-transform: scale(1.03,1.03,0)
+  100%
+    opacity: 1
+    transform: scale(1,1,0)
 
 @-webkit-keyframes roll-background
+  0%
+    background-position: 0 0
+  100%
+    background-position: 20px 0
+@-moz-keyframes roll-background
+  0%
+    background-position: 0 0
+  100%
+    background-position: 20px 0
+@keyframes roll-background
   0%
     background-position: 0 0
   100%

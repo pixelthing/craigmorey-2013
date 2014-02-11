@@ -31,6 +31,16 @@ footer.cm-container
   -webkit-animation-duration: 1000ms
   -webkit-animation-fill-mode: forwards
   -webkit-animation-delay: 400ms
+
+  -moz-animation-name: fade-in
+  -moz-animation-duration: 1000ms
+  -moz-animation-fill-mode: forwards
+  -moz-animation-delay: 400ms
+
+  animation-name: fade-in
+  animation-duration: 1000ms
+  animation-fill-mode: forwards
+  animation-delay: 400ms
   h1
     margin: 100px 0 0
     color: $text-color-dark
@@ -58,6 +68,8 @@ footer.cm-container
     @for $i from 1 through 30
       &:nth-child(#{$i}) img
         -webkit-animation-delay: #{(100 * $i)}ms
+        -moz-animation-delay: #{(100 * $i)}ms
+        animation-delay: #{(100 * $i)}ms
   figure
     margin: 0
     padding: 5px
@@ -75,6 +87,12 @@ footer.cm-container
       -webkit-animation-name: scale-bounce
       -webkit-animation-duration: 500ms
       -webkit-animation-fill-mode: forwards
+      -moz-animation-name: scale-bounce
+      -moz-animation-duration: 500ms
+      -moz-animation-fill-mode: forwards
+      animation-name: scale-bounce
+      animation-duration: 500ms
+      animation-fill-mode: forwards
   a
     color: $text-color-light
     text-decoration: none
@@ -282,6 +300,12 @@ footer.cm-container
       -webkit-animation-name: fade-in
       -webkit-animation-duration: 1000ms
       -webkit-animation-fill-mode: forwards
+      -moz-animation-name: fade-in
+      -moz-animation-duration: 1000ms
+      -moz-animation-fill-mode: forwards
+      animation-name: fade-in
+      animation-duration: 1000ms
+      animation-fill-mode: forwards
 
 /* article thumbs */
 
@@ -300,9 +324,17 @@ footer.cm-container
       -webkit-animation-name: fade-up
       -webkit-animation-duration: 1000ms
       -webkit-animation-fill-mode: forwards
+      -moz-animation-name: fade-up
+      -moz-animation-duration: 1000ms
+      -moz-animation-fill-mode: forwards
+      animation-name: fade-up
+      animation-duration: 1000ms
+      animation-fill-mode: forwards
     @for $i from 2 through 6
       &:nth-child(#{$i})
         -webkit-animation-delay: #{(400 * $i)}ms
+        -moz-animation-delay: #{(400 * $i)}ms
+        animation-delay: #{(400 * $i)}ms
   img
     display: block
     width: 100%
@@ -335,6 +367,14 @@ footer.cm-container
     -webkit-animation-duration: 1000ms
     -webkit-animation-fill-mode: forwards
     -webkit-animation-delay: 800ms
+    -moz-animation-name: fade-up
+    -moz-animation-duration: 1000ms
+    -moz-animation-fill-mode: forwards
+    -moz-animation-delay: 800ms
+    animation-name: fade-up
+    animation-duration: 1000ms
+    animation-fill-mode: forwards
+    animation-delay: 800ms
 
   a
     color: $text-color-light
