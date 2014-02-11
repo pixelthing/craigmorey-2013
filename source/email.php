@@ -1,0 +1,1 @@
+<?php header("Location: mailto:craigmorey@gmail.com"); ?>
