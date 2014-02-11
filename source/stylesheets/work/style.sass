@@ -2,6 +2,7 @@
 @import "variables"
 @import "compass"
 @import "functions"
+@import "extends"
 
 /* base */
 @import "common"
@@ -354,3 +355,28 @@ footer.cm-container
     dd
       margin: 0.2em 0 1em 1.4em
       color: $text-color-light
+
+@media screen AND (max-width: 599px)
+
+
+@media screen AND (min-width: 600px)
+  .cm-work-main
+    p
+      padding-right: 15px
+@media screen AND (min-width: 768px)
+  .cm-work-title
+    top: 10em
+
+@media screen AND (min-width: 962px)
+  /* big title */
+
+  .cm-work-title
+    top: 12em
+    h1
+      font-size: 8em
+
+  /* article body */
+
+  .cm-work-main
+    p
+      padding-right: 0

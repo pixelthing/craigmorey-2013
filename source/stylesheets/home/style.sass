@@ -17,3 +17,20 @@
 @import "blog-common"
 @import "codepen-common"
 @import "work-common"
+
+@media screen AND (max-width: 599px)
+  @import "mobile"
+  @import "instagram-mobile"
+  @import "blog-mobile"
+
+@media screen AND (min-width: 600px)
+  @import "small-tablet"
+  @import "home-small-tablet"
+  @import "work-small-tablet"
+
+@media screen AND (min-width: 768px)
+  @import "tablet"
+
+@media screen AND (min-width: 962px)
+  @import "desktop"
+  @import "work-desktop"
